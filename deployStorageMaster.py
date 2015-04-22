@@ -2,17 +2,20 @@
 import glob
 import re
 import os
+import time
 
 class Node(object):
     nodename = ""
     nodeip = ""
     deviceiqn = ""
     devicepath = ""
-    def __init__(self, nodename,nodeip,deviceiqn,devicepath):
+    tid = ""
+    def __init__(self, nodename,nodeip,deviceiqn,devicepath,tid):
         self.nodename = nodename
         self.nodeip = nodeip
         self.deviceiqn = deviceiqn
         self.devicepath = devicepath
+        self.tid = tid
     def iscsiLogin(self):
         cmdDiscovery = "iscsiadm -m discovery -t sendtargets -p " + self.nodeip
         cmdLogin = "iscsiadm -m node -T " + self.deviceiqn + " -p " + self.nodeip + " -l"
@@ -25,36 +28,39 @@ class Node(object):
 
 class Cluster():
     clusterName = "ssd"
-    nodes = []
+    nodes = {}
     devicesPath = []
     devicesTotalSize = 0
     lvInitialSize = 5 #GB
-    vgname = "masterVG"
+    vgname = "masterVG2"
     lvname = "masterLV"
     cmdDeploayStorage = "./deployStorage.sh"
-    confpath = "./conf/"+clusterName+"Cluster.disklist"
+    confpath = "./conf/"+clusterName+"Cluster"
     def __init__(self, clusterName):
         self.clusterName = clusterName
-        self.vgname = clusterName+"masterVG"
+        self.vgname = clusterName+"masterVG3"
         self.lvname = clusterName+"masterLV"
         self.cmdDeploayStorage = "./deployStorage.sh"
-        self.confpath = "./conf/"+self.clusterName+"Cluster.disklist"
-        self.loadConf()
+        self.confpath = "./conf/"+self.clusterName+"Cluster"
+        self.loadConf("disklist")
+        self.executeCmd("lvmconf --disable-cluster")
 
-    def loadConf(self):
-        self.nodes = []
-        conffile = open(self.confpath)
+    def loadConf(self,confType):
+        '''confType include disklist(for storage list) and nodelist(for appserver list)'''
+        self.nodes[confType] = []
+        conffile = open(self.confpath+"."+confType)
         for line in conffile.xreadlines():
             l = line.split(";")
             nodename = l[0]
             nodeip = l[1]
             deviceiqn = l[2]
             devicepath = l[3]
-            n = Node(nodename, nodeip, deviceiqn, devicepath)
-            self.nodes.append(n)
+            tid = l[4]
+            n = Node(nodename, nodeip, deviceiqn, devicepath,tid)
+            self.nodes[confType].append(n)
 
     def loadStorage(self):
-        for n in self.nodes:
+        for n in self.nodes["disklist"]:
             n.iscsiLogin()
 
     def getDevicesInfo(self):
@@ -68,8 +74,8 @@ class Cluster():
                     devicesPathSys.append(device)
         if '/sys/block/sda' in devicesPathSys:
             devicesPathSys.remove('/sys/block/sda')
-        if len(devicesPathSys) != len(self.nodes):
-            print "WRONG NODES AMOUNT"+str(devicesPathSys)+"vs"+str(self.nodes)
+        if len(devicesPathSys) != len(self.nodes["disklist"]):
+            print "WRONG NODES AMOUNT"+str(devicesPathSys)+"vs"+str(self.nodes["disklist"])
         for d in devicesPathSys:
             # dname = d.split("/")[-1][0:-1]
             nr_sectors = open(d+'/size').read().rstrip('\n')
@@ -106,19 +112,26 @@ class Cluster():
             # print cmd
             # tmp = os.popen(cmd).read()
             # print tmp
-        cmdLV = "lvcreate -L "+str(self.devicesTotalSize-50)+"GB -n "+self.lvname+" "+self.vgname
-        self.executeCmd(cmdLV)
+        self.loadConf("nodelist")
+        for node in self.nodes["nodelist"]:
+            cmdLV = "lvcreate -L "+str(self.lvInitialSize)+"GB -n "+self.lvname+node.nodename+" "+self.vgname
+            self.executeCmd(cmdLV)
     def iscsiTargetStart(self):
-        path = "/dev/"+self.vgname+"/"+self.lvname
-        self.executeCmd("chmod +x "+self.cmdDeploayStorage)
-        self.executeCmd(self.cmdDeploayStorage+" "+path)
-
+        # masterHostname = os.popen("hostname").read()[:-1]
+        for node in self.nodes["nodelist"]:
+            # iqn = "iqn.2222."+masterHostname+node.nodename+":storage.disk2"
+            path = "/dev/"+self.vgname+"/"+self.lvname+node.nodename
+            iqn = node.deviceiqn
+            tid = node.tid
+            # path = node.devicepath
+            self.executeCmd("chmod +x "+self.cmdDeploayStorage)
+            self.executeCmd(self.cmdDeploayStorage+" "+iqn+" "+path+" "+tid)
 
 
 if __name__ == '__main__':
     cluster = Cluster("ssd")
-    cluster.loadConf()
     cluster.loadStorage()
+    time.sleep(5)
     cluster.getDevicesInfo()
     cluster.integrateStorage()
     cluster.iscsiTargetStart()
