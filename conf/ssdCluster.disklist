@@ -1,1 +1,1 @@
-ca01;192.168.3.161;iqn.2222.ca01:storage.disk2;/dev/sdb
+ca02;192.168.3.162;iqn.2222.ca02:storage.disk2;/home/suyiblock1g

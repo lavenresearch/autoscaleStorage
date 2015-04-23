@@ -3,7 +3,9 @@
 if [ "$#" = 0 ]; then
     echo "Run: ./deployStorage.sh iqn.2222."$(hostname)":storage.disk2 /dev/sdb 2"
     deviceiqn=iqn.2222.$(hostname):storage.disk2
-    devicepath=/dev/sdb
+    setenforce 0
+    dd if=/dev/zero of=/home/suyiblock1G bs=1M count=1000
+    devicepath=/home/suyiblock1G
     tid=2
 elif [[ "$#" = 1 ]]; then
     echo "Run: ./deployStorage.sh iqn.2222."$(hostname)":storage.disk2 "${1}" 2"

@@ -3,6 +3,7 @@ import glob
 import re
 import os
 import time
+import sys
 
 class Node(object):
     nodename = ""
@@ -10,12 +11,18 @@ class Node(object):
     deviceiqn = ""
     devicepath = ""
     tid = ""
-    def __init__(self, nodename,nodeip,deviceiqn,devicepath,tid):
+    vgname = ""
+    lvname = ""
+    stringNode = {}
+    def __init__(self, nodename,nodeip,deviceiqn,devicepath,tid,vgname,lvname):
         self.nodename = nodename
         self.nodeip = nodeip
         self.deviceiqn = deviceiqn
         self.devicepath = devicepath
         self.tid = tid
+        self.vgname = vgname
+        self.lvname = lvname
+        self.toString()
     def iscsiLogin(self):
         cmdDiscovery = "iscsiadm -m discovery -t sendtargets -p " + self.nodeip
         cmdLogin = "iscsiadm -m node -T " + self.deviceiqn + " -p " + self.nodeip + " -l"
@@ -25,25 +32,41 @@ class Node(object):
         print cmdLogin
         tmp = os.popen(cmdLogin).read()
         print tmp
+    def toString(self):
+        self.stringNode = {}
+        self.stringNode["nodename"] = self.nodename
+        self.stringNode["nodeip"] = self.nodeip
+        self.stringNode["deviceiqn"] = self.deviceiqn
+        self.stringNode["devicepath"] = self.devicepath
+        self.stringNode["tid"] = self.tid
+        self.stringNode["vgname"] = self.vgname
+        self.stringNode["lvname"] = self.lvname
 
 class Cluster():
     clusterName = "ssd"
     nodes = {}
     devicesPath = []
     devicesTotalSize = 0
-    lvInitialSize = 5 #GB
-    vgname = "masterVG2"
-    lvname = "masterLV"
+    lvInitialSize = 200 #MB
+    vgname = "masterVG"
+    # lvname = "masterLV"
     cmdDeploayStorage = "./deployStorage.sh"
     confpath = "./conf/"+clusterName+"Cluster"
     def __init__(self, clusterName):
         self.clusterName = clusterName
-        self.vgname = clusterName+"masterVG3"
-        self.lvname = clusterName+"masterLV"
+        # self.vgname = clusterName+"masterVG3"
+        # self.lvname = clusterName+"masterLV"
         self.cmdDeploayStorage = "./deployStorage.sh"
         self.confpath = "./conf/"+self.clusterName+"Cluster"
         self.loadConf("disklist")
+        self.loadConf("nodelist")
+        self.vgname = self.nodes["nodelist"][0].vgname
         self.executeCmd("lvmconf --disable-cluster")
+        for conft in ["disklist","nodelist"]:
+            print conft
+            print "#"
+            for n in self.nodes[conft]:
+                print n.stringNode
 
     def loadConf(self,confType):
         '''confType include disklist(for storage list) and nodelist(for appserver list)'''
@@ -55,9 +78,17 @@ class Cluster():
             nodeip = l[1]
             deviceiqn = l[2]
             devicepath = l[3]
-            tid = l[4]
-            n = Node(nodename, nodeip, deviceiqn, devicepath,tid)
+            if confType == "nodelist":
+                tid = l[4]
+                vgname = l[5]
+                lvname = l[6].split('\r')[0]
+            else:
+                tid = ""
+                vgname = ""
+                lvname = ""
+            n = Node(nodename, nodeip, deviceiqn, devicepath,tid,vgname,lvname)
             self.nodes[confType].append(n)
+        conffile.close()
 
     def loadStorage(self):
         for n in self.nodes["disklist"]:
@@ -90,6 +121,7 @@ class Cluster():
         print cmd
         tmp = os.popen(cmd).read()
         print tmp
+        return tmp
 
     def integrateStorage(self):
         cmdPV = "pvcreate "
@@ -112,15 +144,17 @@ class Cluster():
             # print cmd
             # tmp = os.popen(cmd).read()
             # print tmp
-        self.loadConf("nodelist")
         for node in self.nodes["nodelist"]:
-            cmdLV = "lvcreate -L "+str(self.lvInitialSize)+"GB -n "+self.lvname+node.nodename+" "+self.vgname
-            self.executeCmd(cmdLV)
+            cmdLV = "lvcreate -L "+str(self.lvInitialSize)+"MB -n "+node.lvname+" "+self.vgname
+            out = self.executeCmd(cmdLV)
+            if out.find("created") == -1:
+                sys.exit()
+
     def iscsiTargetStart(self):
         # masterHostname = os.popen("hostname").read()[:-1]
         for node in self.nodes["nodelist"]:
             # iqn = "iqn.2222."+masterHostname+node.nodename+":storage.disk2"
-            path = "/dev/"+self.vgname+"/"+self.lvname+node.nodename
+            path = "/dev/"+self.vgname+"/"+node.lvname
             iqn = node.deviceiqn
             tid = node.tid
             # path = node.devicepath
