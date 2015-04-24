@@ -73,7 +73,7 @@ class appServer():
 
     def mountDeviceInit(self,devicePath):
         self.executeCmd("mkdir "+self.mountPoint)
-        self.executeCmd("echo \"y\"|mkreiserfs -f "+devicePath)
+        self.executeCmd("mkreiserfs -f "+devicePath)
         self.executeCmd("mount -t reiserfs "+devicePath+" "+self.mountPoint)
 
     def loadShareStorage(self):
@@ -102,6 +102,8 @@ class appServer():
         hd['available'] = float(disk.f_bsize * disk.f_bavail)/(1024*1024)
         hd['capacity'] = float(disk.f_bsize * disk.f_blocks)/(1024*1024)
         hd['used'] = float((disk.f_blocks - disk.f_bfree) * disk.f_frsize)/(1024*1024)
+        for k in hd.keys():
+            hd[k] = int(round(hd[k]))
         print hd
         # return hd['used']/hd['capacity']
         return hd
@@ -147,7 +149,7 @@ class appServer():
                 self.remoteCmd("resize_reiserfs -s "+str(storageInfo["capacity"]+stepSize)+"M /dev/"+self.appServerConf["vgname"]+"/"+self.appServerConf["lvname"] , self.masterIP)
                 self.remoteCmd("tgtadm --lld iscsi --op delete --mode target --tid "+self.appServerConf["tid"] , self.masterIP)
                 self.remoteCmd("tgtadm --lld iscsi --op new --mode target --tid "+self.appServerConf["tid"]+" -T "+self.appServerConf["deviceiqn"] , self.masterIP)
-                self.remoteCmd("tgtadm --lld iscsi --op new --mode logicalunit --tid "+self.appServerConf["tid"]+" --lun 1 -b "+self.appServerConf["devicepath"] , self.masterIP)
+                self.remoteCmd("setenforce 0;tgtadm --lld iscsi --op new --mode logicalunit --tid "+self.appServerConf["tid"]+" --lun 1 -b "+self.appServerConf["devicepath"] , self.masterIP)
                 self.remoteCmd("tgtadm --lld iscsi --op bind --mode target --tid "+self.appServerConf["tid"]+" -I ALL" , self.masterIP)
                 newDevices = self.loadShareStorage()
                 for d in newDevices:

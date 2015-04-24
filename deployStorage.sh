@@ -1,11 +1,11 @@
 #!/bin/sh
 
 if [ "$#" = 0 ]; then
-    echo "Run: ./deployStorage.sh iqn.2222."$(hostname)":storage.disk2 /dev/sdb 2"
+    echo "Run: ./deployStorage.sh iqn.2222."$(hostname)":storage.disk2 /home/suyiblock10G 2"
     deviceiqn=iqn.2222.$(hostname):storage.disk2
     setenforce 0
-    dd if=/dev/zero of=/home/suyiblock1G bs=1M count=1000
-    devicepath=/home/suyiblock1G
+    dd if=/dev/zero of=/home/suyiblock10G bs=1M count=10000
+    devicepath=/home/suyiblock10G
     tid=2
 elif [[ "$#" = 1 ]]; then
     echo "Run: ./deployStorage.sh iqn.2222."$(hostname)":storage.disk2 "${1}" 2"

@@ -81,7 +81,7 @@ class Cluster():
             if confType == "nodelist":
                 tid = l[4]
                 vgname = l[5]
-                lvname = l[6].split('\r')[0]
+                lvname = l[6]
             else:
                 tid = ""
                 vgname = ""
