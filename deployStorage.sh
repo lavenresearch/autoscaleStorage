@@ -38,5 +38,6 @@ if [[ $status = "tgtd is stopped" ]]; then
 fi
 
 tgtadm --lld iscsi --op new --mode target --tid $tid -T $deviceiqn
+setenforce 0 # have to gurantee SELinux off in order to use file instead block device.
 tgtadm --lld iscsi --op new --mode logicalunit --tid $tid --lun 1 -b $devicepath
 tgtadm --lld iscsi --op bind --mode target --tid $tid -I ALL
