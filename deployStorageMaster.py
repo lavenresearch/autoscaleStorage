@@ -144,22 +144,22 @@ class Cluster():
             # print cmd
             # tmp = os.popen(cmd).read()
             # print tmp
-        for node in self.nodes["nodelist"]:
-            cmdLV = "lvcreate -L "+str(self.lvInitialSize)+"MB -n "+node.lvname+" "+self.vgname
-            out = self.executeCmd(cmdLV)
-            if out.find("created") == -1:
-                sys.exit()
+        # for node in self.nodes["nodelist"]:
+        #     cmdLV = "lvcreate -L "+str(self.lvInitialSize)+"MB -n "+node.lvname+" "+self.vgname
+        #     out = self.executeCmd(cmdLV)
+        #     if out.find("created") == -1:
+        #         sys.exit()
 
-    def iscsiTargetStart(self):
-        # masterHostname = os.popen("hostname").read()[:-1]
-        for node in self.nodes["nodelist"]:
-            # iqn = "iqn.2222."+masterHostname+node.nodename+":storage.disk2"
-            path = "/dev/"+self.vgname+"/"+node.lvname
-            iqn = node.deviceiqn
-            tid = node.tid
-            # path = node.devicepath
-            self.executeCmd("chmod +x "+self.cmdDeploayStorage)
-            self.executeCmd(self.cmdDeploayStorage+" "+iqn+" "+path+" "+tid)
+    # def iscsiTargetStart(self):
+    #     # masterHostname = os.popen("hostname").read()[:-1]
+    #     for node in self.nodes["nodelist"]:
+    #         # iqn = "iqn.2222."+masterHostname+node.nodename+":storage.disk2"
+    #         path = "/dev/"+self.vgname+"/"+node.lvname
+    #         iqn = node.deviceiqn
+    #         tid = node.tid
+    #         # path = node.devicepath
+    #         self.executeCmd("chmod +x "+self.cmdDeploayStorage)
+    #         self.executeCmd(self.cmdDeploayStorage+" "+iqn+" "+path+" "+tid)
 
 
 if __name__ == '__main__':
@@ -168,4 +168,4 @@ if __name__ == '__main__':
     time.sleep(5)
     cluster.getDevicesInfo()
     cluster.integrateStorage()
-    cluster.iscsiTargetStart()
+    # cluster.iscsiTargetStart()

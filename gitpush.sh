@@ -1,3 +1,3 @@
 #!/bin/sh
-git push origin locallvm
-git push origin master
+git push --all origin 
+# git push --tags

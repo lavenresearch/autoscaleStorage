@@ -1,0 +1,1150 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"deinu",
+				"deviceInUse  (variable)"
+			],
+			[
+				"step",
+				"stepSize"
+			],
+			[
+				"aps",
+				"appServerConf"
+			],
+			[
+				"avail",
+				"available"
+			],
+			[
+				"conft",
+				"conft"
+			],
+			[
+				"lvm",
+				"lvmextend"
+			],
+			[
+				"mas",
+				"masterIP"
+			],
+			[
+				"appse",
+				"appserver"
+			],
+			[
+				"depat",
+				"devicePath"
+			],
+			[
+				"ned",
+				"newDevices"
+			],
+			[
+				"appc",
+				"appServerConf  (variable)"
+			],
+			[
+				"clu",
+				"clusterName"
+			],
+			[
+				"apsc",
+				"appServerConf  (variable)"
+			],
+			[
+				"int",
+				"lvInitialSize  (variable)"
+			],
+			[
+				"appsrr",
+				"appserver"
+			],
+			[
+				"in",
+				"integrateDevices  (function)"
+			],
+			[
+				"bad",
+				"baseDevices"
+			],
+			[
+				"devic",
+				"devices"
+			],
+			[
+				"cmdDe",
+				"cmdDiscovery"
+			],
+			[
+				"num",
+				"number"
+			],
+			[
+				"el",
+				"elif"
+			],
+			[
+				"clname",
+				"clusterName  (variable)"
+			],
+			[
+				"read",
+				"xreadlines  (function)"
+			],
+			[
+				"getip",
+				"getIP"
+			],
+			[
+				"co",
+				"colors"
+			],
+			[
+				"pur",
+				"purple"
+			],
+			[
+				"rels",
+				"xreadlines  (function)"
+			],
+			[
+				"fig",
+				"figure"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"met",
+				"metric_y"
+			],
+			[
+				"me",
+				"metric_x"
+			],
+			[
+				"dr",
+				"drawBrace"
+			],
+			[
+				"sta",
+				"statebackup_x"
+			],
+			[
+				"sc",
+				"scheudle_y"
+			],
+			[
+				"win",
+				"window_y"
+			],
+			[
+				"ps",
+				"pos2"
+			],
+			[
+				"shrin",
+				"shrinkA"
+			],
+			[
+				"pos",
+				"pos1"
+			],
+			[
+				"arrow",
+				"arrowstyle"
+			],
+			[
+				"windo",
+				"window_x"
+			],
+			[
+				"wind",
+				"window_y"
+			],
+			[
+				"def",
+				"def	Function"
+			],
+			[
+				"time",
+				"times	latex-mathsymbols"
+			],
+			[
+				"capti",
+				"caption{title}	latex-document"
+			],
+			[
+				"hli",
+				"hlinefill	latex-document"
+			],
+			[
+				"cite",
+				"cite{keylist}	latex-document"
+			],
+			[
+				"res",
+				"receiveMsg"
+			],
+			[
+				"ope",
+				"OperationAnalyser"
+			],
+			[
+				"kafkaTopic",
+				"kafkaTopic"
+			],
+			[
+				"_",
+				"__init__"
+			],
+			[
+				"operation",
+				"operationAnalyser.py"
+			],
+			[
+				"ma",
+				"matrixForNodes  (variable)"
+			],
+			[
+				"up",
+				"updateMatrix  (function)"
+			],
+			[
+				"gl",
+				"matrixForGlobal  (variable)"
+			],
+			[
+				"vect",
+				"vector"
+			],
+			[
+				"glo",
+				"vectorsForGlobal  (variable)"
+			],
+			[
+				"raw",
+				"rawVectorsForNodes"
+			],
+			[
+				"ra",
+				"rawVectorsForNodes"
+			],
+			[
+				"vector",
+				"vectorsForNodes"
+			],
+			[
+				"v",
+				"vectorsForNodes  (variable)"
+			],
+			[
+				"s",
+				"standardizeRawMessage  (function)"
+			],
+			[
+				"rem",
+				"receiveMsg  (function)"
+			],
+			[
+				"lo",
+				"loads  (function)"
+			],
+			[
+				"cl",
+				"collect  (function)"
+			],
+			[
+				"sendm",
+				"sendMessage"
+			],
+			[
+				"le",
+				"leftt"
+			],
+			[
+				"l",
+				"leftt"
+			],
+			[
+				"oth",
+				"other_element"
+			],
+			[
+				"f2",
+				"first_element2"
+			],
+			[
+				"fir",
+				"first_element2"
+			],
+			[
+				"data",
+				"data_lines"
+			],
+			[
+				"da",
+				"data_lines"
+			],
+			[
+				"fit",
+				"first_time1"
+			],
+			[
+				"com",
+				"commands"
+			],
+			[
+				"dup",
+				"dumps  (function)"
+			],
+			[
+				"duo",
+				"dumps  (function)"
+			],
+			[
+				"occ",
+				"occur"
+			],
+			[
+				"cle",
+				"clear"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"pn",
+				"pnfsStatus.json"
+			],
+			[
+				"ran",
+				"randrange"
+			],
+			[
+				"non",
+				"nodeName"
+			],
+			[
+				"pnfs",
+				"pnfsStatus.json"
+			],
+			[
+				"d",
+				"dumps  (function)"
+			],
+			[
+				"c",
+				"children"
+			],
+			[
+				"name",
+				"refname{name}	latex-document"
+			],
+			[
+				"ren",
+				"renewcommand{cmd}{def}	latex-document"
+			],
+			[
+				"vsp",
+				"vspace{length}	latex-document"
+			],
+			[
+				"back",
+				"right\\backslash	latex-document"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "deployStorageMaster.py",
+			"settings":
+			{
+				"buffer_size": 6027,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"setxml",
+				"Set Syntax: XML"
+			],
+			[
+				"setja",
+				"Set Syntax: Java"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"texcount",
+				"LaTeXing: Texcount"
+			],
+			[
+				"setpy",
+				"Set Syntax: Python"
+			],
+			[
+				"setshell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"ipython",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"pyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"relp",
+				"SublimeREPL: PHP"
+			],
+			[
+				"pytho",
+				"SublimeREPL: Python"
+			],
+			[
+				"py",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"texc",
+				"LaTeXing: Texcount"
+			],
+			[
+				"pdf",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"count",
+				"LaTeXing: Texcount"
+			],
+			[
+				"texcu",
+				"LaTeXing: Texcount"
+			],
+			[
+				"texco",
+				"LaTeXing: Texcount"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Enumerate"
+			],
+			[
+				"open",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"tex",
+				"LaTeXing: Texcount"
+			],
+			[
+				"Snippet: templ",
+				"Snippet: latexessaytemplate"
+			],
+			[
+				"Snippet: emp",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"view pd",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"set pl",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"error",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"linte",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"texcon",
+				"LaTeXing: Texcount"
+			],
+			[
+				"Snippet: fir",
+				"Snippet: New Figure"
+			],
+			[
+				"Snippet: e",
+				"Snippet: Enumerate"
+			],
+			[
+				"setmark",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"Snippet: d",
+				"Snippet: Description"
+			],
+			[
+				"latexing",
+				"LaTeXing: Texcount"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"sideb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"Build: ",
+				"Build: Primary Quick Build"
+			],
+			[
+				"Snippet: new",
+				"Snippet: New Article"
+			],
+			[
+				"q",
+				"Build: Choose Quick Build"
+			],
+			[
+				"Snippet: ne",
+				"Snippet: New Article"
+			],
+			[
+				"Snippet: art",
+				"Snippet: New Article"
+			],
+			[
+				"outp",
+				"LaTeXing: Clean Temporary Output Dictionary"
+			],
+			[
+				"latexing output",
+				"LaTeXing: Clean Temporary Output Dictionary"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 541.0
+	},
+	"console":
+	{
+		"height": 155.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/project/706项目/测试结果/20150410/iozone4K-2G-12-nodelistall.log",
+		"/D/project/706项目/测试结果/20150402/4iozone4M.log",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/autoscaleAppServer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/autoscale.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorageMaster.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.nodelist",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/genfile.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.disklist",
+		"/D/project/本科毕设/codes_and_logs/storage_provisioning.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageMasterDestroy.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageMasterDestroy.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployAppServer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/deployAppServer.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deploySlaveAppServer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/appServerDestroy.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployAppServer.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/getDevicesInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/getDevicesInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.py",
+		"/C/Users/lav/Desktop/cluster.conf",
+		"/E/pf/WizNote/My Knowledge/temp/334012742/配置及测试系统环境相关工作.md-334012742.md",
+		"/E/pf/WizNote/My Knowledge/temp/301266666/配置及测试系统环境相关工作.md-301266666.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/ssdCluster.nodelist",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storage.sh",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/js/getdata.js",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/js/operationshow.js",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/expansionlv.jsp",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/fileTable.jsp",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/oporder/oporder.xml",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/createlv.jsp",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/login.jsp",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/error.jsp",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/bottom.jsp",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/nodeupdate.jsp",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/monitor.jsp",
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/js/FusionMaps.js",
+		"/C/Users/lav/AppData/Local/Temp/WinMount3/WM3c4c3769b$.tmp/.ptmp608375/s3APIpNFS/s3/.ptmp266514/mock-s3-master/mock_s3/xml_templates.py",
+		"/C/Users/lav/AppData/Local/Temp/WinMount3/WM3c4c3769b$.tmp/.ptmp608375/s3APIpNFS/s3/.ptmp266514/mock-s3-master/mock_s3/main.py",
+		"/C/Users/lav/AppData/Local/Temp/WinMount3/WM3c4c3769b$.tmp/.ptmp608375/s3APIpNFS/s3/.ptmp266514/mock-s3-master/mock_s3/file_store.py",
+		"/C/Users/lav/AppData/Local/Temp/WinMount3/WM3c4c3769b$.tmp/.ptmp608375/s3APIpNFS/s3/.ptmp266514/mock-s3-master/tests/create.py",
+		"/C/Users/lav/Desktop/111disksa/startsa/SAReg4.java",
+		"/C/Users/lav/Desktop/111disksa.src/startsa/SAReg4.java",
+		"/C/Users/lav/Desktop/getip.java",
+		"/Z/存储虚拟化软件发布包/执行代理linux发布包/ExecProxy/exec/genXML.java",
+		"/Z/存储虚拟化软件发布包/存储虚拟化windows发布包/san_volume_alpha_nocode_9-17/disksa/111disksa/.project",
+		"/Z/存储虚拟化软件发布包/存储虚拟化windows发布包/san_volume_alpha_nocode_9-17/disksa/111disksa/disk.xml",
+		"/Z/存储虚拟化软件发布包/存储虚拟化windows发布包/san_volume_alpha_nocode_9-17/disksa/111disksa/RegInf",
+		"/Z/存储虚拟化软件发布包/执行代理linux发布包/ExecProxy/exec/ExecProxy.java",
+		"/Z/存储虚拟化软件发布包/执行代理linux发布包/ExecProxy/util/NodeOP.java",
+		"/Z/存储虚拟化软件发布包/执行代理linux发布包/hostSA/node/operation/NodeOP.java",
+		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/LvmlOperator.java",
+		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/genXML.java",
+		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/ExecProxy.java",
+		"/D/project/本科毕设/codes_and_logs/ad_warning_new.py",
+		"/D/project/本科毕设/codes_and_logs/ad_warning.py",
+		"/D/project/本科毕设/codes_and_logs/read_rrd.sh",
+		"/D/project/本科毕设/codes_and_logs/init_pnfs.sh",
+		"/E/pf/WizNote/My Knowledge/temp/672898503/Reading Note - Virtual Ma-672898503.md",
+		"/D/project/本科毕设/codes_and_logs/init_ganglia.sh",
+		"/D/project/本科毕设/codes_and_logs/gen_file.sh",
+		"/D/project/本科毕设/codes_and_logs/gen_file.py",
+		"/D/project/本科毕设/codes_and_logs/change_internal_file_gen.py",
+		"/E/pf/WizNote/My Knowledge/temp/661884520/配置环境相关工作.md-661884520.md",
+		"/E/pf/WizNote/My Knowledge/temp/602691595/Reading Note - Virtual Ma-602691595.md",
+		"/D/project/706项目/已有系统及文档/系统诊断/result.txt",
+		"/D/project/706项目/已有系统及文档/系统诊断/result.py",
+		"/E/pnfs/linux-3.10/fs/nfs/nfs4xdr.c",
+		"/D/Dropbox/bb/research/FirstPaper/firstPaper.tex",
+		"/D/Dropbox/bb/research/FirstPaper/vldb2015/vldb2015.tex",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/BracketGuard/Default (Windows).sublime-keymap",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/BracketGuard/BracketGuard.sublime-settings",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/Dropbox/bb/research/FirstPaper/vldb2015/vldb2015.bbl",
+		"/D/Dropbox/bb/research/FirstPaper/nomargin/nomargin.tex",
+		"/D/Dropbox/bb/research/FirstPaper/nomargin/vldb.cls",
+		"/E/pf/CTEX/MiKTeX/tex/latex/enumitem/enumitem.sty",
+		"/D/Dropbox/bb/research/FirstPaper/vldb2015/vldb.cls",
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/run_operationAnalyser.py",
+		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/run_RPCCollector.py",
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/run_anomalyDetector.py",
+		"/D/project/706项目/测试结果/20150401/pnfsThroughput.py",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/pnfsThroughput.py",
+		"/D/project/706项目/测试结果/20150329/无安全4线程/pnfsThroughput.py",
+		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/install.sh",
+		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/setup.sh",
+		"/D/Dropbox/bb/research/FirstPaper/images/example.py",
+		"/C/Users/lav/Downloads/annotation_demo2.py",
+		"/C/Users/lav/Downloads/errorbar_demo.py",
+		"/C/Users/lav/Downloads/arrow_demo.py",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone256k.log",
+		"/D/Dropbox/bb/research/FirstPaper/images/pnfsThroughput.py",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone8M.log",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone32k.log",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone64k.log",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone128k.log",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone16M.log",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone16k.log",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone4M.log",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone2M.log",
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone1M.log",
+		"/C/Users/lav/Downloads/cos.py",
+		"/C/Users/lav/Downloads/connectionstyle_demo.py",
+		"/C/Users/lav/Downloads/test.py",
+		"/C/Users/lav/Desktop/test/heart.tex",
+		"/D/Dropbox/bb/research/FirstPaper/acm/sigproc-sp.tex",
+		"/D/Dropbox/bb/research/FirstPaper/acm/templates/sigproc-sp.tex",
+		"/E/pf/WizNote/My Knowledge/temp/75431678/系统监控与故障诊断相关 -- 关键词.md-75431678.md",
+		"/D/Dropbox/bb/research/FirstPaper/firstPaperBackup1.tex",
+		"/D/Dropbox/bb/research/FirstPaper/acm/sig-alternate.tex",
+		"/D/Dropbox/bb/research/FirstPaper/vldb2015/vldb2015.pdf",
+		"/E/pf/WizNote/My Knowledge/temp/438671441/在流数据处理中持久化消息的理由.md-438671441.md",
+		"/E/pf/WizNote/My Knowledge/temp/313009641/Reading Note - CEC Contin-313009641.md",
+		"/D/Dropbox/bb/research/FirstPaper/firstPaper.sublime-workspace",
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/operationAnalyser.py",
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/RPCCollector.py",
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/anomalyDetector.py",
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/run_kafka.sh",
+		"/D/project/github/ParallelFS_Diagnosis/target/common_services/deploy_common_services.sh",
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/install_kafka.sh",
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/install_python_kafka.sh",
+		"/D/project/github/ParallelFS_Diagnosis/target/run_kafka.sh",
+		"/D/project/github/ParallelFS_Diagnosis/target/status_collector/deploy_status_collector.sh",
+		"/D/project/github/ParallelFS_Diagnosis/target/run_storm.sh",
+		"/D/project/github/ParallelFS_Diagnosis/target/run_status_collector.sh",
+		"/D/project/github/ParallelFS_Diagnosis/target/noise.sh",
+		"/D/project/github/ParallelFS_Diagnosis/target/init_kafka.sh"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"vgname",
+			"nodelist",
+			"masterName",
+			"condition",
+			"2",
+			"n",
+			"self.nodes",
+			"self.devicesPath",
+			"5",
+			"hostid",
+			"self.devicesPath",
+			"        -",
+			"- ",
+			"iscsiadm",
+			">",
+			"\"\"",
+			"devicepath",
+			",",
+			"ssd",
+			"start",
+			"submitorder",
+			"One or more",
+			"iscsi_ip",
+			"NodeOP",
+			"masterip",
+			"TCPServer",
+			"tcpserver",
+			"TCPServer",
+			"tcpserver",
+			"TCPServer",
+			"tcpserver",
+			"LAYOUTGET",
+			"LAYOUTRETURN",
+			"layout",
+			"TEST_STATEID",
+			"LAYOUTCOMMIT",
+			"DELEGRETURN",
+			"nfsd4_enc_ops",
+			"nfs4_xdr_enc_",
+			"nfsd4_enc_ops",
+			"nfsd4_encode_",
+			"section",
+			"requirements",
+			"Samza",
+			"margin",
+			"top",
+			"geometry",
+			"margin",
+			"malformed",
+			"Malformed",
+			"open",
+			"OffsetAndMessage",
+			"key",
+			"curdir",
+			"width=",
+			"will",
+			"keep",
+			"SuSE",
+			"rpm",
+			"For",
+			"size",
+			"size=9",
+			"\\ ",
+			"ts1",
+			"ts0",
+			"tf",
+			"tw0",
+			"n_{(",
+			"n_{I",
+			"n_{",
+			"None",
+			"\\na",
+			"2",
+			"6",
+			"5",
+			"statebackup_y",
+			"i",
+			"statebackup_x",
+			"1",
+			"0",
+			"scheudle_y",
+			"schedule_x",
+			"1",
+			"0",
+			"1",
+			"0",
+			"window_y",
+			"window_x",
+			"30",
+			"20",
+			"10",
+			"50",
+			"mid_pos",
+			"text",
+			"25",
+			"0",
+			"t_b",
+			"t_",
+			"t",
+			"2.5",
+			"t",
+			"3",
+			"t",
+			"\\n",
+			"y",
+			"metric_y",
+			"_x",
+			"metric",
+			"metric_x",
+			"genDot",
+			" ",
+			"plot",
+			" ",
+			"30",
+			"23",
+			"collection",
+			",",
+			"aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+			"aaaaaaaaaaaaaaaa",
+			"aaaaaaaaaaaaaaaaaaaaaaaaa",
+			"aaaaaaaaaaaaaaaa",
+			"aaaaaaaaaaaaaaaaaaaa",
+			"\\frac",
+			"displaymath",
+			"env",
+			"S_{time}",
+			"\\otimes",
+			"_time"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "deployStorageMaster.py",
+					"settings":
+					{
+						"buffer_size": 6027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 169.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 126.0
+	},
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"vld",
+				"vldb2015/vldb2015.tex"
+			],
+			[
+				"vldbt",
+				"vldb2015/vldb2015.tex"
+			],
+			[
+				"firt",
+				"firstPaper.tex"
+			],
+			[
+				"ex",
+				"images/example.py"
+			],
+			[
+				"e",
+				"images/example.py"
+			],
+			[
+				"f",
+				"firstPaper.tex"
+			],
+			[
+				"2015t",
+				"vldb2015/vldb2015.tex"
+			],
+			[
+				"fi",
+				"firstPaper.tex"
+			],
+			[
+				"vldb.tex",
+				"vldb2015/vldb2015.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/project/github/ParallelFS_Diagnosis/pfsd.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 278.0,
+	"status_bar_visible": true
+}
