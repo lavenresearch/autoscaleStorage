@@ -1,2 +1,2 @@
-ca01;192.168.3.161;iqn.2222.de01ca01:storage.disk;/home/suyilocalblock1g;100;ssdmasterVG5;ssdmasterLVca01;
-ca02;192.168.3.162;iqn.2222.de01ca02:storage.disk;/home/suyilocalblock1g;200;ssdmasterVG5;ssdmasterLVca02;
+ca01;192.168.3.161;iqn.2222.de01ca01:storage.disk;/dev/loop0;100;ssdmasterVG;ssdmasterLVca01;
+ca02;192.168.3.162;iqn.2222.de01ca02:storage.disk;/dev/loop0;200;ssdmasterVG;ssdmasterLVca02;

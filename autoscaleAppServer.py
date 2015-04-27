@@ -14,7 +14,7 @@ class appServer():
     appServerConf = {}
     remoteDiskAmount = 0
     # stepSize = 100 # MB
-    initialCmds = ["yum install iscsi-initiator-utils.x86_64 -y",
+    initialCmds = ["yum install iscsi-initiator-utils.x86_64 reiserfs-utils sysstat -y",
                     "service iptables stop",
                     "setenforce 0",
                     "service NetworkManager stop",
@@ -59,7 +59,7 @@ class appServer():
                 self.appServerConf["lvpath"] = "/dev/"+self.appServerConf["vgname"]+"/"+self.appServerConf["lvname"]
         conffile.close()
 
-    def getDeviceSize(devicepathDev):
+    def getDeviceSize(self,devicepathDev):
         devicepathSys = "/sys/block/"+devicepathDev.split("/")[-1]
         nr_sectors = open(devicepathSys+'/size').read().rstrip('\n')
         sect_size = open(devicepathSys+'/queue/hw_sector_size').read().rstrip('\n')
@@ -92,10 +92,11 @@ class appServer():
         return self.executeCmd(cmd)
 
     def createRemoteStorage(self,stepSize):
+        self.remoteDiskAmount += 1
         lvname = self.appServerConf["lvname"]+str(self.remoteDiskAmount)
         self.remoteCmd("lvcreate -L "+str(stepSize+10)+"M -n "+lvname+" "+self.appServerConf["vgname"] , self.masterIP)
-        status = self.remoteCmd("service tgtd status" , self.masterIP).split["\n"][0]
-        if status == "tgtd is stopped":
+        status = self.remoteCmd("service tgtd status" , self.masterIP)
+        if status.find("tgtd is stopped") != -1:
             self.remoteCmd("service tgtd start" , self.masterIP)
         tid = str(self.appServerConf['inittid']+self.remoteDiskAmount)
         iqn = self.appServerConf["deviceiqn"]+str(self.remoteDiskAmount)
@@ -103,7 +104,6 @@ class appServer():
         self.remoteCmd("tgtadm --lld iscsi --op new --mode target --tid "+tid+" -T "+iqn , self.masterIP)
         self.remoteCmd("setenforce 0;tgtadm --lld iscsi --op new --mode logicalunit --tid "+tid+" --lun 1 -b "+lvpath , self.masterIP)
         self.remoteCmd("tgtadm --lld iscsi --op bind --mode target --tid "+tid+" -I ALL" , self.masterIP)
-        self.remoteDiskAmount += 1
 
     def loadRemoteStorage(self):
         self.baseDevices = self.getDevicesInfo()
@@ -203,9 +203,10 @@ if __name__ == '__main__':
         masterName = "de01"
         masterIP = "192.168.3.121"
     else:
+        clusterName = "ssdCluster"
         mountPoint = "/autoscale"
         masterName = "de01"
         masterIP = "192.168.3.121"
     appserver = appServer(masterName, masterIP, mountPoint, clusterName)
     appserver.mountLocalDevice()
-    appserver.autoscale(30,700,100)# seconds , MB
+    appserver.autoscale(30,700,100)# (interval in seconds,threshold in MB,stepSize in MB)
