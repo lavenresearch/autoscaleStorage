@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Autoscale Storage by lavenresearch</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Autoscale Storage</h1>
+        <h2></h2>
+
+        <section id="downloads">
+          <a href="https://github.com/lavenresearch/autoscaleStorage/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/lavenresearch/autoscaleStorage/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/lavenresearch/autoscaleStorage" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="自扩展存储autoscale-storage" class="anchor" href="#%E8%87%AA%E6%89%A9%E5%B1%95%E5%AD%98%E5%82%A8autoscale-storage" aria-hidden="true"><span class="octicon octicon-link"></span></a>自扩展存储(Autoscale Storage)</h1>
+
+<p>主要功能包括存储资源虚拟化，异构存储资源统一管理，资源分组与预留，资源动态调度。</p>
+
+<h2>
+<a id="存储资源虚拟化" class="anchor" href="#%E5%AD%98%E5%82%A8%E8%B5%84%E6%BA%90%E8%99%9A%E6%8B%9F%E5%8C%96" aria-hidden="true"><span class="octicon octicon-link"></span></a>存储资源虚拟化</h2>
+
+<p>目标：</p>
+
+<p>将多个单独的存储资源虚拟成为一个存储资源池。应用服务器能够从存储资源池中申请任意数量的存储使用。</p>
+
+<p>操作：</p>
+
+<ul>
+<li>创建任意大小（小于存储池可用存储容量）的存储卷</li>
+<li>将创建的存储卷分配给任意应用服务器使用</li>
+</ul>
+
+<h2>
+<a id="异构存储资源统一管理" class="anchor" href="#%E5%BC%82%E6%9E%84%E5%AD%98%E5%82%A8%E8%B5%84%E6%BA%90%E7%BB%9F%E4%B8%80%E7%AE%A1%E7%90%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>异构存储资源统一管理</h2>
+
+<p>目标：</p>
+
+<p>支持多种存储设备，包括，SCSI，iSCSI，FCoE。</p>
+
+<p>操作：</p>
+
+<ul>
+<li>显示每一个存储资源所属存储设备类型</li>
+</ul>
+
+<h2>
+<a id="资源分组" class="anchor" href="#%E8%B5%84%E6%BA%90%E5%88%86%E7%BB%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>资源分组</h2>
+
+<p>目标：</p>
+
+<p>存储资源分为快设备和慢设备。即，有快设备存储池和慢设备存储池，应用服务器可以从根据需要分别申请快存储资源和慢存储资源使用。</p>
+
+<p>操作：</p>
+
+<ul>
+<li>分别显示快存储池和慢存储池中的设备</li>
+</ul>
+
+<h2>
+<a id="资源预留" class="anchor" href="#%E8%B5%84%E6%BA%90%E9%A2%84%E7%95%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>资源预留</h2>
+
+<p>目标：</p>
+
+<p>应用服务器同时作为存储服务器。应用服务器中包含直接使用的存储资源及加入存储池以实现资源预留的存储资源。</p>
+
+<p>操作：</p>
+
+<ul>
+<li>在应用服务器上，分别显示正在使用的存储资源数量及预留的存储资源数量</li>
+</ul>
+
+<h2>
+<a id="资源动态调度" class="anchor" href="#%E8%B5%84%E6%BA%90%E5%8A%A8%E6%80%81%E8%B0%83%E5%BA%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>资源动态调度</h2>
+
+<p>目标：</p>
+
+<p>根据应用服务使用存储资源的情况，为应用服务器<strong>在线</strong>增加存储容量。</p>
+
+<p>操作：</p>
+
+<ul>
+<li>用户设置下列参数启动自动扩容服务：动态调度的周期，触发扩容操作的阈值，一次扩容添加的存储资源数量</li>
+<li>每次扩容成功后更新存储资源使用情况显示</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
