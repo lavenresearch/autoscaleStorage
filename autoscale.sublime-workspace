@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"ex",
+				"extendMountPoint"
+			],
+			[
+				"r",
+				"remoteCmd  (function)"
+			],
+			[
+				"reda",
+				"remoteDiskAmount  (variable)"
+			],
+			[
+				"new",
+				"newDevices"
+			],
+			[
+				"getde",
+				"getDeviceSize"
+			],
+			[
+				"ssd",
+				"ssdCluster"
+			],
+			[
 				"deinu",
 				"deviceInUse  (variable)"
 			],
@@ -364,10 +388,10 @@
 	"buffers":
 	[
 		{
-			"file": "deployStorageMaster.py",
+			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 6027,
+				"buffer_size": 612,
 				"line_ending": "Windows"
 			}
 		}
@@ -375,9 +399,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 135.0,
 		"selected_items":
 		[
+			[
+				"setpy",
+				"Set Syntax: Python"
+			],
 			[
 				"setxml",
 				"Set Syntax: XML"
@@ -393,10 +421,6 @@
 			[
 				"texcount",
 				"LaTeXing: Texcount"
-			],
-			[
-				"setpy",
-				"Set Syntax: Python"
 			],
 			[
 				"setshell",
@@ -563,7 +587,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 541.0
+		"width": 553.0
 	},
 	"console":
 	{
@@ -580,15 +604,23 @@
 	},
 	"file_history":
 	[
+		"/D/project/706项目/已有系统及文档/自动扩容/src/genfile.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.disklist",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.nodelist",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/autoscaleAppServer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorageMaster.py",
+		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/conf.php",
+		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/storage_provisioning.py",
+		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/monitor-change.sh",
+		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/init_ganglia.sh",
+		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/install.sh",
+		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/ganglia.conf",
+		"/D/project/706项目/已有系统及文档/monitor/ganglia/script/rsh_config.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/temp.py",
 		"/D/project/706项目/测试结果/20150410/iozone4K-2G-12-nodelistall.log",
 		"/D/project/706项目/测试结果/20150402/4iozone4M.log",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/autoscaleAppServer.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/autoscale.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorageMaster.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.nodelist",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/genfile.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.disklist",
 		"/D/project/本科毕设/codes_and_logs/storage_provisioning.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/storageMasterDestroy.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/storageMasterDestroy.py",
@@ -665,7 +697,6 @@
 		"/D/project/706项目/测试结果/20150401/pnfsThroughput.py",
 		"/D/project/706项目/测试结果/20150329/无安全单线程/pnfsThroughput.py",
 		"/D/project/706项目/测试结果/20150329/无安全4线程/pnfsThroughput.py",
-		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/install.sh",
 		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/setup.sh",
 		"/D/Dropbox/bb/research/FirstPaper/images/example.py",
 		"/C/Users/lav/Downloads/annotation_demo2.py",
@@ -700,14 +731,7 @@
 		"/D/project/706项目/已有系统及文档/系统诊断/源码/anomalyDetector.py",
 		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/run_kafka.sh",
 		"/D/project/github/ParallelFS_Diagnosis/target/common_services/deploy_common_services.sh",
-		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/install_kafka.sh",
-		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/install_python_kafka.sh",
-		"/D/project/github/ParallelFS_Diagnosis/target/run_kafka.sh",
-		"/D/project/github/ParallelFS_Diagnosis/target/status_collector/deploy_status_collector.sh",
-		"/D/project/github/ParallelFS_Diagnosis/target/run_storm.sh",
-		"/D/project/github/ParallelFS_Diagnosis/target/run_status_collector.sh",
-		"/D/project/github/ParallelFS_Diagnosis/target/noise.sh",
-		"/D/project/github/ParallelFS_Diagnosis/target/init_kafka.sh"
+		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/install_kafka.sh"
 	],
 	"find":
 	{
@@ -725,6 +749,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"iostat",
+			"100",
+			"stepSize",
+			"P",
+			"1",
+			"device",
 			"vgname",
 			"nodelist",
 			"masterName",
@@ -846,13 +876,7 @@
 			"aaaaaaaaaaaaaaaa",
 			"aaaaaaaaaaaaaaaaaaaaaaaaa",
 			"aaaaaaaaaaaaaaaa",
-			"aaaaaaaaaaaaaaaaaaaa",
-			"\\frac",
-			"displaymath",
-			"env",
-			"S_{time}",
-			"\\otimes",
-			"_time"
+			"aaaaaaaaaaaaaaaaaaaa"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -875,18 +899,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "deployStorageMaster.py",
+					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 6027,
+						"buffer_size": 612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								266,
+								266
 							]
 						],
 						"settings":
@@ -1024,9 +1048,7 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/sublime-markdown-extended/Syntaxes/Markdown Extended.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1144,7 +1166,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 278.0,
 	"status_bar_visible": true
 }
