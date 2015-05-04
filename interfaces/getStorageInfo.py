@@ -3,7 +3,7 @@ import sys
 import json
 
 class storageInfo():
-    storInfoExample = {"ssdCluster":[{"deviceName":"/dev/sdb","deviceLocation":"192.168.3.62","deviceIQN":"iqn.2222.ca01:storage.disk2","deviceSize":"10GB","deviceType":"fcoe"},]}
+    storInfoExample = {"ssdCluster":[{"deviceName":"/dev/sdb","deviceLocation":"192.168.3.62","deviceIQN":"iqn.2222.ca01:storage.disk2","deviceSize":"10GB","deviceType":"fcoe","deviceGroup":"ssdCluster"},]}
     storInfo = {}
     def __init__(self):
         pass

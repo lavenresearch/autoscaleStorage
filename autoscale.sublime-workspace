@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"deviqn",
+				"deviceIQN"
+			],
+			[
+				"strip",
+				"storageManagerIP"
+			],
+			[
+				"au",
+				"autoscaleConfig"
+			],
+			[
+				"rel",
+				"readline  (function)"
+			],
+			[
+				"de",
+				"deviceGroup"
+			],
+			[
+				"___",
+				"__init__"
+			],
+			[
+				"auto",
+				"autoScaleLog"
+			],
+			[
+				"sh",
+				"shutdownLog"
+			],
+			[
+				"get",
+				"getStorageInfo.py"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"ge",
+				"getLogger  (function)"
+			],
+			[
+				"lo",
+				"logSource  (variable)"
+			],
+			[
 				"ex",
 				"extendMountPoint"
 			],
@@ -276,10 +324,6 @@
 				"receiveMsg  (function)"
 			],
 			[
-				"lo",
-				"loads  (function)"
-			],
-			[
 				"cl",
 				"collect  (function)"
 			],
@@ -388,20 +432,67 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "reference/deployStorageMaster.py",
 			"settings":
 			{
-				"buffer_size": 612,
+				"buffer_size": 6059,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "reference/deployStorage.sh",
+			"settings":
+			{
+				"buffer_size": 1257,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "conf/ssdCluster.disklist",
+			"settings":
+			{
+				"buffer_size": 131,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "reference/autoscaleAppServer.py",
+			"settings":
+			{
+				"buffer_size": 8993,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "configClient.py",
+			"settings":
+			{
+				"buffer_size": 1444,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "import redis,json\n\nclass configHelper():\n    ipInfoC = \"\"\n    portInfoC = 6379\n    groupManagerConfKey = \"groupckey\"\n    providerConfKey = \"pckey\"\n    comsumerConfKey = \"cckey\"\n    def __init__(self, ipInfoC, portInfoC):\n        self.ipInfoC = ipInfoC\n        self.portInfoC = portInfoC\n\n    def setConfig(self,key,value):\n        r = redis\n    def getConfig(self,key):\n        pass\n\nif __name__ == '__main__':\n    ipInfoC = \"127.0.0.1\"\n    portInfoC = 6379\n    chelper = configHelper(ipInfoC, portInfoC)\n",
+			"file": "confingHelper.py",
+			"file_size": 506,
+			"file_write_time": 130752004163640294,
+			"settings":
+			{
+				"buffer_size": 505,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 135.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"markdown",
+				"Pandoc: Render Markdown to temp PDF and View"
+			],
 			[
 				"setpy",
 				"Set Syntax: Python"
@@ -587,7 +678,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 553.0
+		"width": 562.0
 	},
 	"console":
 	{
@@ -604,11 +695,35 @@
 	},
 	"file_history":
 	[
+		"/D/project/706项目/已有系统及文档/自动扩容/src/confingHelper.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/bk.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/ak.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/interfaces/requestExtraStorage.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/interfaces/getStorageInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/interfaces/enableAutoscale.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/interfaces/getAppServerInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageManager.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageConsumer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageProducer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/deployAppServer.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/interfaces/autoScaleLog.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/autoscaleAppServer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.disklist",
+		"/E/pf/WizNote/My Knowledge/temp/126393367/YARN应用开发.md-126393367.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/OpenSource/其他方案.md",
+		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-am.sh",
+		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-class.sh",
+		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-job.sh",
+		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-container.sh",
+		"/E/pf/WizNote/My Knowledge/temp/44207344/bugs.md-44207344.md",
+		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/kill-yarn-job.sh",
+		"/D/Dropbox/bb/research/tdstore-app-hello-samza-0.9.0/README.md",
+		"/D/Dropbox/bb/research/temp.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/README.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/其他方案.md",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/genfile.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.disklist",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.nodelist",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/autoscaleAppServer.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorageMaster.py",
 		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/conf.php",
 		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/storage_provisioning.py",
@@ -625,7 +740,6 @@
 		"/D/project/706项目/已有系统及文档/自动扩容/src/storageMasterDestroy.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/storageMasterDestroy.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deployAppServer.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/deployAppServer.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deploySlaveAppServer.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/appServerDestroy.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deployAppServer.sh",
@@ -708,30 +822,7 @@
 		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone32k.log",
 		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone64k.log",
 		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone128k.log",
-		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone16M.log",
-		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone16k.log",
-		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone4M.log",
-		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone2M.log",
-		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone1M.log",
-		"/C/Users/lav/Downloads/cos.py",
-		"/C/Users/lav/Downloads/connectionstyle_demo.py",
-		"/C/Users/lav/Downloads/test.py",
-		"/C/Users/lav/Desktop/test/heart.tex",
-		"/D/Dropbox/bb/research/FirstPaper/acm/sigproc-sp.tex",
-		"/D/Dropbox/bb/research/FirstPaper/acm/templates/sigproc-sp.tex",
-		"/E/pf/WizNote/My Knowledge/temp/75431678/系统监控与故障诊断相关 -- 关键词.md-75431678.md",
-		"/D/Dropbox/bb/research/FirstPaper/firstPaperBackup1.tex",
-		"/D/Dropbox/bb/research/FirstPaper/acm/sig-alternate.tex",
-		"/D/Dropbox/bb/research/FirstPaper/vldb2015/vldb2015.pdf",
-		"/E/pf/WizNote/My Knowledge/temp/438671441/在流数据处理中持久化消息的理由.md-438671441.md",
-		"/E/pf/WizNote/My Knowledge/temp/313009641/Reading Note - CEC Contin-313009641.md",
-		"/D/Dropbox/bb/research/FirstPaper/firstPaper.sublime-workspace",
-		"/D/project/706项目/已有系统及文档/系统诊断/源码/operationAnalyser.py",
-		"/D/project/706项目/已有系统及文档/系统诊断/源码/RPCCollector.py",
-		"/D/project/706项目/已有系统及文档/系统诊断/源码/anomalyDetector.py",
-		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/run_kafka.sh",
-		"/D/project/github/ParallelFS_Diagnosis/target/common_services/deploy_common_services.sh",
-		"/D/project/706项目/已有系统及文档/系统诊断/源码/libs/install_kafka.sh"
+		"/D/project/706项目/测试结果/20150329/无安全单线程/iozone16M.log"
 	],
 	"find":
 	{
@@ -749,6 +840,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"providerPath",
+			"consumerPath",
+			"storageManagerIP",
+			"deviceGroup",
+			"device",
+			"deviceName",
+			"device",
+			"deviceName",
+			"function",
+			"extend",
+			"slogPath",
+			"logging",
+			"……",
+			"~",
+			"：",
+			"\n",
 			"iostat",
 			"100",
 			"stepSize",
@@ -860,23 +967,7 @@
 			"t",
 			"\\n",
 			"y",
-			"metric_y",
-			"_x",
-			"metric",
-			"metric_x",
-			"genDot",
-			" ",
-			"plot",
-			" ",
-			"30",
-			"23",
-			"collection",
-			",",
-			"aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-			"aaaaaaaaaaaaaaaa",
-			"aaaaaaaaaaaaaaaaaaaaaaaaa",
-			"aaaaaaaaaaaaaaaa",
-			"aaaaaaaaaaaaaaaaaaaa"
+			"metric_y"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -894,23 +985,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
+					"file": "reference/deployStorageMaster.py",
 					"settings":
 					{
-						"buffer_size": 612,
+						"buffer_size": 6059,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								266,
-								266
+								2275,
+								2275
 							]
 						],
 						"settings":
@@ -1048,7 +1139,1025 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/sublime-markdown-extended/Syntaxes/Markdown Extended.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1083.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "reference/deployStorage.sh",
+					"settings":
+					{
+						"buffer_size": 1257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								857,
+								857
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 103.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "conf/ssdCluster.disklist",
+					"settings":
+					{
+						"buffer_size": 131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								131,
+								131
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "reference/autoscaleAppServer.py",
+					"settings":
+					{
+						"buffer_size": 8993,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								717
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "configClient.py",
+					"settings":
+					{
+						"buffer_size": 1444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1389,
+								1393
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "",
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 122.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "confingHelper.py",
+					"settings":
+					{
+						"buffer_size": 505,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1076,11 +2185,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1112,6 +2228,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"conh",
+				"confingHelper.py"
+			],
+			[
+				"ak",
+				"ak.py"
+			],
+			[
+				"disk",
+				"conf/ssdCluster.disklist"
+			],
 			[
 				"vld",
 				"vldb2015/vldb2015.tex"
@@ -1166,7 +2294,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 278.0,
 	"status_bar_visible": true
 }

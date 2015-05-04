@@ -1,0 +1,3 @@
+保持information center中信息的有效性。例如，provider，group manager，consumer挂了，information中对应的信息应该被删除，即垃圾回收。
+
+垃圾回收程序，周期性的删除information center中的所有信息。而provider，group manager，consumer则不断的将自己最新的状态信息重新写入information center。从而保证无效信息会在一定时间后被清除。
