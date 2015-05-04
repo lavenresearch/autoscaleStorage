@@ -21,6 +21,13 @@ class configHelper():
         return value
 
     def setGroupMConf(self,conf):
+        '''
+        group manager conf in redis:
+        {
+            groupname1:{"gmIP":"192.168.3.161","currentTid":152,"devicesLoaded":[deviceID1,deviceID2,]},
+            groupname2:{},
+        }
+        '''
         self.setConfig(self.groupManagerConfKey,json.dumps(conf))
     def getGroupMConf(self):
         confJson = self.getConfig(self.groupManagerConfKey)
@@ -29,6 +36,13 @@ class configHelper():
         return conf
 
     def setProviderConf(self,conf):
+        '''
+        provider conf in redis.
+        {
+            groupname1:{deviceID1:conf1,deviceID2:conf2,},
+            groupname2:{},
+        }
+        '''
         self.setConfig(self.providerConfKey,json.dumps(conf))
     def getProviderConf(self):
         confJson = self.getConfig(self.providerConfKey)

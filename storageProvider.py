@@ -54,6 +54,13 @@ class storageProvider():
             self.updateInfoCenter(conf)
 
     def updateInfoCenter(self,conf):
+        '''
+        conf in remote.
+        {
+            groupname1:{deviceID1:conf1,deviceID2:conf2,},
+            groupname2:{},
+        }
+        '''
         confRemote = self.cHelper.getProviderConf()
         confGroupRemote = confRemote[conf["deviceGroup"]]
         deviceID = conf["deviceName"]+conf["deviceLocation"]
