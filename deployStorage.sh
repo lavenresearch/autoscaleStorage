@@ -29,7 +29,7 @@ fi
 
 # install iscsi target
 
-yum install scsi-target-utils.x86_64 -y
+yum install scsi-target-utils.x86_64 --nogpgcheck -y
 
 # start iscsi target
 status=$(service tgtd status)

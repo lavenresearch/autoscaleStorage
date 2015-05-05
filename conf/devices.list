@@ -1,3 +1,3 @@
-/dev/loop0;192.168.3.161;iqn.dsal.ca01:storage.disk0;FCoE;lowSpeedGroup;ca01;100
-/dev/loop1;192.168.3.161;iqn.dsal.ca01:storage.disk1;iSCSI;lowSpeedGroup;ca01;101
-/dev/loop0;192.168.3.162;iqn.dsal.ca02:storage.disk0;Local SSD;highSpeedGroup;ca02;100
+/dev/loop0;192.168.1.162;iqn.dsal.ca02:storage.disk0;FCoE;lowSpeedGroup;100;
+/dev/loop1;192.168.1.162;iqn.dsal.ca02:storage.disk1;iSCSI;highSpeedGroup;101;
+/dev/loop0;192.168.1.131;iqn.dsal.de11:storage.disk0;Local SSD;highSpeedGroup;100;

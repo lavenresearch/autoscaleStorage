@@ -13,11 +13,13 @@ class configHelper():
         self.r = redis.StrictRedis( host=self.ipInfoC, port=self.portInfoC, db=0)
 
     def setConfig(self,key,value):
-        print "\nSET:\n"+value
+        print "\nSET:\n"+str(value)
         self.r.set(key,value)
     def getConfig(self,key):
         value = self.r.get(key)
-        print "\nGET:\n"+value
+        print "\nGET:\n"+str(value)
+        if value == None:
+            value = '{}'
         return value
 
     def setGroupMConf(self,conf):

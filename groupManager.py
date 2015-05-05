@@ -63,7 +63,7 @@ class groupManager():
 
     def setGroupManagerConf(self):
         conf = {}
-        conf["gmIP"] = self.getLocalIP("eth0")
+        conf["gmIP"] = self.getLocalIP("eth2")
         conf["currentTid"] = 500
         conf["devicesLoaded"] = []
         for d in self.devicesList:
@@ -98,13 +98,10 @@ class groupManager():
         time.sleep(10)
         devices = self.getDevicesInfo()
         newDevices = list(set(devices).difference(set(baseDevices)))
-        print "baseDevice"+str(self.baseDevices)
-        print "allDevice"+str(devices)
-        print "newDevice"+str(newDevices)
-        if newDevices != []:
-            self.baseDevices = devices
-            self.deviceInUse = newDevices
-        else:
+        print "baseDevices"+str(baseDevices)
+        print "allDevices"+str(devices)
+        print "newDevices"+str(newDevices)
+        if newDevices == []:
             print "Storage Load Failed"
             sys.exit()
         return newDevices
@@ -124,30 +121,36 @@ class groupManager():
     def getAddedDevicesInfo(self):
         confRemote = self.cHelper.getGroupMConf()
         confGroupRemote = confRemote[self.groupName]
-        devicesLoaded = confGroupRemote["devicesLoaded"]
+        devicesLoadedID = confGroupRemote["devicesLoaded"]
         devicesAdded = []
         for d in self.devicesList:
-            if d.deviceID not in devicesLoaded:
+            if d.deviceID not in devicesLoadedID:
                 devicesAdded.append(d)
         return devicesAdded
 
     def extendIntegrateStorage(self):
         devicesAdded = self.getAddedDevicesInfo()
+        print devicesAdded
         newDevices = self.loadRemoteStorage(devicesAdded)
+        # print newDevices
         cmdPV = "pvcreate "
         for newDev in newDevices:
             self.executeCmd(cmdPV+newDev)
         cmdVG = "vgextend "+self.vgName+" "
         for i in xrange(0,len(newDevices)):
-            self.executeCmd(cmdVG+self.newDevices[i])
+            self.executeCmd(cmdVG+newDevices[i])
         confRemote = self.cHelper.getGroupMConf()
+        # print confRemote
         confGroupRemote = confRemote[self.groupName]
-        confGroupRemote["devicesLoaded"].extend(devicesAdded)
+        # print confGroupRemote
+        for d in devicesAdded:
+            confGroupRemote["devicesLoaded"].append(d.deviceID)
+        # print confRemote
         self.cHelper.setGroupMConf(confRemote)
 
 
 if __name__ == '__main__':
-    ipInfoC = "127.0.0.1"
+    ipInfoC = "192.168.1.137"
     portInfoC = 6379
     groupName = "lowSpeedGroup"
     sProvider = groupManager(ipInfoC, portInfoC, groupName)
