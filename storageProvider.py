@@ -50,7 +50,7 @@ class storageProvider():
             conf["deviceGroup"] = ll[4]
             conf["tid"] = ll[5]
             if conf["deviceLocation"] == self.hostIP:
-                conf["deviceSize"] = str(self.getDeviceSize(conf["deviceName"]))+" GB"
+                conf["deviceSize"] = self.getDeviceSize(conf["deviceName"])
                 self.confList.append(conf)
         f.close()
 
