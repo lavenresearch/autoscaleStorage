@@ -8,4 +8,4 @@ if __name__ == '__main__':
     sProvider = groupManager(ipInfoC, portInfoC, groupName)
     sProvider.integrateStorageInit()
     # add some devices
-    sProvider.extendIntegrateStorage()
+    # sProvider.extendIntegrateStorage()

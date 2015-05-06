@@ -5,6 +5,8 @@ group manager : de17
 
 procedure:
 
+@ALL
+
     yum install iscsi-initiator-utils.x86_64 reiserfs-utils sysstat scsi-target-utils.x86_64 -y --nogpgcheck
 
 @de17
@@ -32,6 +34,11 @@ procedure:
 
     python storageConsumer.py
     python consumerExtend.py
+
+@ca02
+
+    python consumerAutoscale.py
+    python genfile.py
 
 
 NOTE:
