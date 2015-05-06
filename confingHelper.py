@@ -53,6 +53,26 @@ class configHelper():
         return conf
 
     def setConsumerConf(self,conf):
+        '''
+        consumer conf in redis
+        {
+            consumerID1:{
+                "mountPoint":/home/suyi/consumer1,...,
+                "extraDevicesList":[
+                    {
+                        "localDeviceMap":"/dev/sdc",
+                        "remoteLV":"removeLV",
+                        "groupName":"groupName",
+                        "remoteVG":"groupName"+"VG",
+                        "remoteLVPath":"/dev/"+"remoteVG"+"/"+"remoteLV"
+                        "remoteSize":"size",
+                        "remoteTid":"remoteTid",
+                        "remoteIQN":"remoteIQN",
+                    },
+                ]
+            }
+        }
+        '''
         self.setConfig(self.comsumerConfKey,json.dumps(conf))
     def getConsumerConf(self):
         confJson = self.getConfig(self.comsumerConfKey)
