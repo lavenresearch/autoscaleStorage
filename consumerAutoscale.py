@@ -10,8 +10,8 @@ if __name__ == '__main__':
     # consumerID = sys.argv[5]
     interval = 30 # in seconds
     threshold = 300 # in MBs
-    groupName = "lowSpeedGroup"
+    groupName = "highSpeedGroup"
     stepSize = 100 # in MBs
-    consumerID = "/home/suyi/consumer1192.168.1.131"
+    consumerID = "/home/suyi/consumer1192.168.1.162"
     sConsumer = storageConsumer(ipInfoC, portInfoC)
     sConsumer.autoscale( interval, threshold, stepSize, groupName, consumerID)

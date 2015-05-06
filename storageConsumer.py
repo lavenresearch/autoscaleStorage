@@ -136,9 +136,9 @@ class storageConsumer():
         status = self.remoteCmd("service tgtd status" , groupManagerIP)
         if status.find("tgtd is stopped") != -1:
             self.remoteCmd("service tgtd start" , groupManagerIP)
-        self.remoteCmd("tgtadm --lld iscsi --op new --mode target --tid "+extraDeviceConf["remoteTid"]+" -T "+extraDeviceConf["remoteIQN"] , groupManagerIP)
-        self.remoteCmd("setenforce 0;tgtadm --lld iscsi --op new --mode logicalunit --tid "+extraDeviceConf["remoteTid"]+" --lun 1 -b "+extraDeviceConf["remoteLVPath"] , groupManagerIP)
-        self.remoteCmd("tgtadm --lld iscsi --op bind --mode target --tid "+extraDeviceConf["remoteTid"]+" -I ALL" , groupManagerIP)
+        self.remoteCmd("tgtadm --lld iscsi --op new --mode target --tid "+str(extraDeviceConf["remoteTid"])+" -T "+extraDeviceConf["remoteIQN"] , groupManagerIP)
+        self.remoteCmd("setenforce 0;tgtadm --lld iscsi --op new --mode logicalunit --tid "+str(extraDeviceConf["remoteTid"])+" --lun 1 -b "+extraDeviceConf["remoteLVPath"] , groupManagerIP)
+        self.remoteCmd("tgtadm --lld iscsi --op bind --mode target --tid "+str(extraDeviceConf["remoteTid"])+" -I ALL" , groupManagerIP)
 
         # loadRemoteStorage
 
@@ -170,8 +170,9 @@ class storageConsumer():
         newSizeMB = remoteConsumerConf["localDeviceSize"]
         for edConf in remoteConsumerConf["extraDevicesList"]:
             newSizeMB += edConf["remoteSize"]
+        newSizeMB = str(newSizeMB)
         self.executeCmd("lvextend -L "+newSizeMB+"M "+remoteConsumerConf["localLVPath"])
-        self.executeCmd("resize_reiserfs -s "+newSizeMB+"M "+remoteConsumersConf["localLVPath"])
+        self.executeCmd("resize_reiserfs -s "+newSizeMB+"M "+remoteConsumerConf["localLVPath"])
 
         # update Information center
 

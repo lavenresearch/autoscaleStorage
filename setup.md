@@ -5,6 +5,8 @@ group manager : de17
 
 procedure:
 
+    yum install iscsi-initiator-utils.x86_64 reiserfs-utils sysstat scsi-target-utils.x86_64 -y --nogpgcheck
+
 @de17
 
     /home/suyi/virtualization/packages/redis-stable/src/redis-server
@@ -25,6 +27,11 @@ procedure:
 @de17
 
     python extendGroup.py highSpeedGroup
+
+@ca02
+
+    python storageConsumer.py
+    python consumerExtend.py
 
 
 NOTE:

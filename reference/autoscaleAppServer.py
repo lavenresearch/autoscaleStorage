@@ -14,7 +14,7 @@ class appServer():
     appServerConf = {}
     remoteDiskAmount = 0
     # stepSize = 100 # MB
-    initialCmds = ["yum install iscsi-initiator-utils.x86_64 reiserfs-utils sysstat -y",
+    initialCmds = ["yum install iscsi-initiator-utils.x86_64 reiserfs-utils sysstat -y --nogpgcheck",
                     "service iptables stop",
                     "setenforce 0",
                     "service NetworkManager stop",
