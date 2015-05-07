@@ -32,7 +32,7 @@ if __name__ == '__main__':
     cmd = "ssh -t root@"+consumerIP+" \"python "+path+"consumerAutoscale.py "+interval+" "+threshold+" "+groupName+" "+stepSize+" "+consumerMountPoint+consumerIP+"\""
     print cmd
     logger.writeLog(cmd)
-    # result = os.popen().read()
-    # print result
-    # logger.writeLog(result)
+    result = os.popen(cmd).read()
+    print result
+    logger.writeLog(result)
     logger.shutdownLog()

@@ -732,8 +732,13 @@
 	},
 	"file_history":
 	[
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageProvider.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/requestExtraStorage.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/enableAutoscale.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/configHelper.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/autoScaleLog.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/confingHelper.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/fortest/requestExtraStorage.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/fortest/enableAutoscale.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/fortest/confingHelper.py",
@@ -757,7 +762,6 @@
 		"/D/project/706项目/已有系统及文档/自动扩容/src/destroy.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deploy.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deployConsumer.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/storageProvider.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/createGroup.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/groupManager.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/configClient.py",
@@ -855,11 +859,7 @@
 		"/E/pf/WizNote/My Knowledge/temp/661884520/配置环境相关工作.md-661884520.md",
 		"/E/pf/WizNote/My Knowledge/temp/602691595/Reading Note - Virtual Ma-602691595.md",
 		"/D/project/706项目/已有系统及文档/系统诊断/result.txt",
-		"/D/project/706项目/已有系统及文档/系统诊断/result.py",
-		"/E/pnfs/linux-3.10/fs/nfs/nfs4xdr.c",
-		"/D/Dropbox/bb/research/FirstPaper/firstPaper.tex",
-		"/D/Dropbox/bb/research/FirstPaper/vldb2015/vldb2015.tex",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+		"/D/project/706项目/已有系统及文档/系统诊断/result.py"
 	],
 	"find":
 	{

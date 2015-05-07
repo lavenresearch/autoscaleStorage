@@ -33,7 +33,11 @@ procedure:
 @ca02
 
     python storageConsumer.py
-    python consumerExtend.py
+    <!-- python consumerExtend.py -->
+
+@de17
+
+    python requestExtraStorage.py 192.168.1.162 /home/suyi/consumer1 highSpeedGroup 100
 
 @ca02
 

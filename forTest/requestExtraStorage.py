@@ -22,7 +22,7 @@ import sys,os
 if __name__ == '__main__':
     logger = autoscaleLog(__file__)
     logger.writeLog(str(sys.argv))
-    path = "/usr/local/src/suyiAotuscale/src/"
+    path = "/usr/local/src/suyiAutoscale/src/"
     consumerIP = sys.argv[1]
     consumerMountPoint = sys.argv[2]
     groupName = sys.argv[3]
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     cmd = "ssh -t root@"+consumerIP+" \"python "+path+"consumerExtend.py "+groupName+" "+stepSize+" "+consumerMountPoint+consumerIP+"\""
     print cmd
     logger.writeLog(cmd)
-    # result = os.popen().read()
-    # print result
-    # logger.writeLog(result)
+    result = os.popen(cmd).read()
+    print result
+    logger.writeLog(result)
     logger.shutdownLog()

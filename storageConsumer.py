@@ -9,7 +9,7 @@ class storageConsumer():
     ipInfoC = ""
     portInfoC = 6379
     cHelper = None
-    confPath = "./conf/consumers.list"
+    confPath = "/usr/local/src/suyiAutoscale/src/conf/consumers.list"
     confList = []
     hostIP = ""
     logger = None
@@ -169,7 +169,8 @@ class storageConsumer():
             extraDeviceConf["localDeviceMap"] = newD
         newSizeMB = remoteConsumerConf["localDeviceSize"]
         for edConf in remoteConsumerConf["extraDevicesList"]:
-            newSizeMB += edConf["remoteSize"]
+            newSizeMB += int(edConf["remoteSize"])
+        newSizeMB += int(extraDeviceConf["remoteSize"])
         newSizeMB = str(newSizeMB)
         self.executeCmd("lvextend -L "+newSizeMB+"M "+remoteConsumerConf["localLVPath"])
         self.executeCmd("resize_reiserfs -s "+newSizeMB+"M "+remoteConsumerConf["localLVPath"])
