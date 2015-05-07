@@ -1,4 +1,5 @@
 from autoScaleLog import autoscaleLog
+from remoteProcess import remoteProcess
 import sys,os
 
 # Needed arguments including:
@@ -34,5 +35,7 @@ if __name__ == '__main__':
     logger.writeLog(cmd)
     result = os.popen(cmd).read()
     print result
+    remoteAS = remoteProcess("consumerAutoscale.py", consumerIP)
+    remoteAS.getPID()
     logger.writeLog(result)
     logger.shutdownLog()
