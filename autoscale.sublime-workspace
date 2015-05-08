@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"remot",
+				"remoteAS"
+			],
+			[
+				"get",
+				"getPID"
+			],
+			[
+				"rem",
+				"remoteProcess"
+			],
+			[
+				"remote",
+				"remoteProcess"
+			],
+			[
+				"kill",
+				"killProcess"
+			],
+			[
+				"remo",
+				"remoteAS"
+			],
+			[
+				"re",
+				"remoteProcess"
+			],
+			[
+				"dup",
+				"dumps  (function)"
+			],
+			[
 				"comm",
 				"consumerMountPoint"
 			],
@@ -38,10 +70,6 @@
 			[
 				"sp",
 				"sleep  (function)"
-			],
-			[
-				"remo",
-				"remoteConsumersConf"
 			],
 			[
 				"setc",
@@ -80,20 +108,12 @@
 				"remoteTid"
 			],
 			[
-				"remot",
-				"remoteVG"
-			],
-			[
 				"remog",
 				"remoteGroupManagerConf"
 			],
 			[
 				"reg",
 				"remoteGroupManagerConf"
-			],
-			[
-				"get",
-				"getGroupMConf  (function)"
 			],
 			[
 				"ch",
@@ -492,28 +512,8 @@
 				"standardizeRawMessage  (function)"
 			],
 			[
-				"rem",
-				"receiveMsg  (function)"
-			],
-			[
 				"cl",
 				"collect  (function)"
-			],
-			[
-				"sendm",
-				"sendMessage"
-			],
-			[
-				"le",
-				"leftt"
-			],
-			[
-				"l",
-				"leftt"
-			],
-			[
-				"oth",
-				"other_element"
 			]
 		]
 	},
@@ -736,15 +736,21 @@
 	},
 	"file_history":
 	[
+		"/E/pf/WizNote/My Knowledge/temp/821137236/Reading Note - PriorityMe-821137236.md",
+		"/E/pf/WizNote/My Knowledge/temp/821076817/Reading Note - PriorityMe-821076817.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/testRemoteProcess.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/disableAutoscale.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/enableAutoscale.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/configHelper.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/remoteProcess.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getPID.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageConsumer.py",
 		"/D/project/706项目/已有系统及文档/monitor/ganglia李双双/readme",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/destroy.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/configHelper.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/enableAutoscale.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getInfo.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/requestExtraStorage.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/autoScaleLog.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/setup.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/storageConsumer.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/dataExample.json",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/storageProvider.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/confingHelper.py",
@@ -857,13 +863,7 @@
 		"/D/project/本科毕设/codes_and_logs/ad_warning.py",
 		"/D/project/本科毕设/codes_and_logs/read_rrd.sh",
 		"/D/project/本科毕设/codes_and_logs/init_pnfs.sh",
-		"/E/pf/WizNote/My Knowledge/temp/672898503/Reading Note - Virtual Ma-672898503.md",
-		"/D/project/本科毕设/codes_and_logs/init_ganglia.sh",
-		"/D/project/本科毕设/codes_and_logs/gen_file.sh",
-		"/D/project/本科毕设/codes_and_logs/gen_file.py",
-		"/D/project/本科毕设/codes_and_logs/change_internal_file_gen.py",
-		"/E/pf/WizNote/My Knowledge/temp/661884520/配置环境相关工作.md-661884520.md",
-		"/E/pf/WizNote/My Knowledge/temp/602691595/Reading Note - Virtual Ma-602691595.md"
+		"/E/pf/WizNote/My Knowledge/temp/672898503/Reading Note - Virtual Ma-672898503.md"
 	],
 	"find":
 	{
@@ -881,6 +881,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"remoteCmd",
 			"remoteSize",
 			"/dev/sd",
 			"consumerMountPoint",
@@ -1007,8 +1008,7 @@
 			"6",
 			"5",
 			"statebackup_y",
-			"i",
-			"statebackup_x"
+			"i"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1084,6 +1084,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"test",
+				"forTest/testRemoteProcess.py"
+			],
+			[
+				"remo",
+				"forTest/remoteProcess.py"
+			],
 			[
 				"destr",
 				"destroy.sh"
@@ -1214,7 +1222,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 278.0,
 	"status_bar_visible": true
 }
