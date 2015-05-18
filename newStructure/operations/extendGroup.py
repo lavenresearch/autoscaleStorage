@@ -28,8 +28,8 @@ class extendGroup():
         if devicesLoaded == None:
             devicesLoaded == []
         if devicesLoaded == []:
-            groupManager.integrateStorageInit()
+            self.groupManager.integrateStorageInit()
         else:
-            groupManager.extendIntegrateStorage()
+            self.groupManager.extendIntegrateStorage()
 
 

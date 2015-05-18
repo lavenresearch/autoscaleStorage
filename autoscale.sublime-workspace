@@ -4,6 +4,222 @@
 		"selected_items":
 		[
 			[
+				"glob",
+				"globals"
+			],
+			[
+				"consu",
+				"consumerIP"
+			],
+			[
+				"incl",
+				"infoCLocation"
+			],
+			[
+				"locd",
+				"localDeviceMap"
+			],
+			[
+				"sc",
+				"sConsumer"
+			],
+			[
+				"locald",
+				"localDeviceMap"
+			],
+			[
+				"ope",
+				"operations"
+			],
+			[
+				"init",
+				"integrateStorageInit  (function)"
+			],
+			[
+				"devl",
+				"devicesLoaded"
+			],
+			[
+				"get",
+				"getGroupMConf"
+			],
+			[
+				"g",
+				"getInfoCLocation  (function)"
+			],
+			[
+				"e",
+				"exit  (function)"
+			],
+			[
+				"storage",
+				"storageProvider"
+			],
+			[
+				"st",
+				"storageProvider  (class)"
+			],
+			[
+				"ext",
+				"extendGroup"
+			],
+			[
+				"devi",
+				"deviceName"
+			],
+			[
+				"gr",
+				"groupname"
+			],
+			[
+				"groupn",
+				"groupname"
+			],
+			[
+				"lo",
+				"logger"
+			],
+			[
+				"setgm",
+				"setGroupMConf  (function)"
+			],
+			[
+				"deviclo",
+				"devicesLoaded"
+			],
+			[
+				"ge",
+				"getGroupMIP  (function)"
+			],
+			[
+				"stac",
+				"staticConfig"
+			],
+			[
+				"test",
+				"testAll"
+			],
+			[
+				"high",
+				"highSpeedGroup"
+			],
+			[
+				"re",
+				"requestStorage  (function)"
+			],
+			[
+				"remotec",
+				"remoteConf"
+			],
+			[
+				"gmi",
+				"gmIP"
+			],
+			[
+				"r",
+				"remoteCmd  (function)"
+			],
+			[
+				"relvp",
+				"remoteLVPath"
+			],
+			[
+				"extr",
+				"extraDevicesList"
+			],
+			[
+				"extra",
+				"exportStorage"
+			],
+			[
+				"remotc",
+				"remoteConf"
+			],
+			[
+				"conl",
+				"consumerLocation"
+			],
+			[
+				"rei",
+				"remoteIQN"
+			],
+			[
+				"hostn",
+				"hostName"
+			],
+			[
+				"writ",
+				"writeLog  (function)"
+			],
+			[
+				"hostIp",
+				"hostIP  (variable)"
+			],
+			[
+				"shu",
+				"shutdownLog"
+			],
+			[
+				"auto",
+				"autoscaleLog"
+			],
+			[
+				"gmip",
+				"gmip"
+			],
+			[
+				"getr",
+				"getGroupMConf  (function)"
+			],
+			[
+				"hostip",
+				"hostIP  (variable)"
+			],
+			[
+				"op",
+				"operations  (module)"
+			],
+			[
+				"mo",
+				"module"
+			],
+			[
+				"mod",
+				"moduleName"
+			],
+			[
+				"s",
+				"startConsumer"
+			],
+			[
+				"modl",
+				"moduleName"
+			],
+			[
+				"modu",
+				"moduleName"
+			],
+			[
+				"cor",
+				"corea"
+			],
+			[
+				"co",
+				"corea"
+			],
+			[
+				"a",
+				"argv"
+			],
+			[
+				"genera",
+				"generalConfig"
+			],
+			[
+				"aut",
+				"autoscaleLog"
+			],
+			[
 				"tim",
 				"timeSequence"
 			],
@@ -24,16 +240,8 @@
 				"providersConf"
 			],
 			[
-				"devi",
-				"deviceSize"
-			],
-			[
 				"remot",
 				"remoteAS"
-			],
-			[
-				"get",
-				"getPID"
 			],
 			[
 				"rem",
@@ -52,10 +260,6 @@
 				"remoteAS"
 			],
 			[
-				"re",
-				"remoteProcess"
-			],
-			[
 				"dup",
 				"dumps  (function)"
 			],
@@ -66,10 +270,6 @@
 			[
 				"du",
 				"dumps  (function)"
-			],
-			[
-				"ge",
-				"getConsumerConf  (function)"
 			],
 			[
 				"c",
@@ -106,10 +306,6 @@
 			[
 				"newD",
 				"newD"
-			],
-			[
-				"ext",
-				"extraDeviceConf"
 			],
 			[
 				"loades",
@@ -192,10 +388,6 @@
 				"newDevices"
 			],
 			[
-				"lo",
-				"loadRemoteStorageInit  (function)"
-			],
-			[
 				"devicei",
 				"deviceID"
 			],
@@ -214,10 +406,6 @@
 			[
 				"devci",
 				"deviceID"
-			],
-			[
-				"devl",
-				"devicesList  (variable)"
 			],
 			[
 				"ap",
@@ -268,16 +456,8 @@
 				"__init__"
 			],
 			[
-				"auto",
-				"autoScaleLog"
-			],
-			[
 				"sh",
 				"shutdownLog"
-			],
-			[
-				"r",
-				"remoteCmd  (function)"
 			],
 			[
 				"reda",
@@ -334,191 +514,43 @@
 			[
 				"appc",
 				"appServerConf  (variable)"
-			],
-			[
-				"clu",
-				"clusterName"
-			],
-			[
-				"apsc",
-				"appServerConf  (variable)"
-			],
-			[
-				"int",
-				"lvInitialSize  (variable)"
-			],
-			[
-				"appsrr",
-				"appserver"
-			],
-			[
-				"in",
-				"integrateDevices  (function)"
-			],
-			[
-				"bad",
-				"baseDevices"
-			],
-			[
-				"devic",
-				"devices"
-			],
-			[
-				"cmdDe",
-				"cmdDiscovery"
-			],
-			[
-				"num",
-				"number"
-			],
-			[
-				"el",
-				"elif"
-			],
-			[
-				"clname",
-				"clusterName  (variable)"
-			],
-			[
-				"read",
-				"xreadlines  (function)"
-			],
-			[
-				"getip",
-				"getIP"
-			],
-			[
-				"co",
-				"colors"
-			],
-			[
-				"pur",
-				"purple"
-			],
-			[
-				"rels",
-				"xreadlines  (function)"
-			],
-			[
-				"fig",
-				"figure"
-			],
-			[
-				"st",
-				"style"
-			],
-			[
-				"met",
-				"metric_y"
-			],
-			[
-				"dr",
-				"drawBrace"
-			],
-			[
-				"sta",
-				"statebackup_x"
-			],
-			[
-				"sc",
-				"scheudle_y"
-			],
-			[
-				"win",
-				"window_y"
-			],
-			[
-				"ps",
-				"pos2"
-			],
-			[
-				"shrin",
-				"shrinkA"
-			],
-			[
-				"pos",
-				"pos1"
-			],
-			[
-				"arrow",
-				"arrowstyle"
-			],
-			[
-				"windo",
-				"window_x"
-			],
-			[
-				"wind",
-				"window_y"
-			],
-			[
-				"def",
-				"def	Function"
-			],
-			[
-				"time",
-				"times	latex-mathsymbols"
-			],
-			[
-				"capti",
-				"caption{title}	latex-document"
-			],
-			[
-				"hli",
-				"hlinefill	latex-document"
-			],
-			[
-				"cite",
-				"cite{keylist}	latex-document"
-			],
-			[
-				"res",
-				"receiveMsg"
-			],
-			[
-				"ope",
-				"OperationAnalyser"
-			],
-			[
-				"kafkaTopic",
-				"kafkaTopic"
-			],
-			[
-				"_",
-				"__init__"
-			],
-			[
-				"operation",
-				"operationAnalyser.py"
-			],
-			[
-				"ma",
-				"matrixForNodes  (variable)"
-			],
-			[
-				"up",
-				"updateMatrix  (function)"
-			],
-			[
-				"gl",
-				"matrixForGlobal  (variable)"
-			],
-			[
-				"vect",
-				"vector"
-			],
-			[
-				"glo",
-				"vectorsForGlobal  (variable)"
-			],
-			[
-				"raw",
-				"rawVectorsForNodes"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "newStructure/test/testAll.py",
+			"settings":
+			{
+				"buffer_size": 608,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "newStructure/interfaces/readme.md",
+			"settings":
+			{
+				"buffer_size": 878,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "newStructure/main.py",
+			"settings":
+			{
+				"buffer_size": 1026,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "reference/dataExample.json",
+			"settings":
+			{
+				"buffer_size": 3588,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -526,6 +558,14 @@
 		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"remove",
 				"Package Control: Remove Package"
@@ -593,10 +633,6 @@
 			[
 				"py",
 				"SublimeREPL: Python - IPython"
-			],
-			[
-				"mini",
-				"View: Toggle Minimap"
 			],
 			[
 				"texc",
@@ -727,7 +763,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 562.0
+		"width": 554.0
 	},
 	"console":
 	{
@@ -744,12 +780,81 @@
 	},
 	"file_history":
 	[
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/interfaces/requestExtraStorage.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/interfaces/createGroup.py",
+		"/D/getip.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/interfaces/addDeviceToGroup.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/interfaces/releaseExtraStorage.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/interfaces/addStorageConsumer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/interfaces/getUsageInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/interfaces/getInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/core/storageConsumer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/operations/releaseStorage.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/operations/requestStorage.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageConsumer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/operations/extendGroup.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/operations/startProvider.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/operations/startConsumer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/utils/deployALL.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/deployALL.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/utils/staticConfig.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/core/storageProvider.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/core/groupManager.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/utils/configHelper.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/utils/autoScaleLog.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/dataExample.json",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/storageProvider.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/core/deployStorage.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/consumers.list",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/destroy.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/newStructure/main.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/groupManager.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/configClient.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/confingHelper.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/newStructure/utils/configHelper.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/newStructure/main.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/newStructure/operations/opa.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/newStructure/core/corea.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/newStructure/operations/__init__.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/newStructure/core/opa.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/devices.list",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/setup.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/requestExtraStorage.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.nodelist",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.disklist",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/createGroup.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/generalConfig.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getUsageInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/createGroup.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/releaseStorage.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/addStorageConsumer.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/addDeviceToGroup.py",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Pretty JSON.sublime-settings",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getUsageInfoForTest.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getInfoForTest.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/enableAutoscale.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/disableAutoscale.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getInfoCLocation.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/testRemoteProcess.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/autoScaleLog.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/InfoC.conf",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/remoteProcess.py",
+		"/E/pf/WizNote/My Knowledge/temp/1477271170/Reading Note - PriorityMe-1477271170.md",
+		"/E/pf/WizNote/My Knowledge/temp/1386597664/Reading Note - PriorityMe-1386597679.md",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/hotsoptAnalysis.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/randomData.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/hotspot.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/genfile.py",
+		"/E/pf/WizNote/My Knowledge/temp/1386595199/Reading Note - PriorityMe-1386595199.md",
+		"/E/pf/WizNote/My Knowledge/temp/1382747481/Reading Note - PriorityMe-1382747481.md",
+		"/E/pf/WizNote/My Knowledge/temp/1384724669/Reading Note - IOFlow- A-1384724669.md",
+		"/E/pf/WizNote/My Knowledge/temp/1384007189/Reading Note - Method To -1384007189.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-01-06-method-to-search-and-read-paper.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/randomData.py",
 		"/D/project/706项目/测试结果/20150401/pnfsThroughput.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/tc.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/tc.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/workload/randomData.py",
 		"/E/pf/WizNote/My Knowledge/temp/1207312126/Reading Note - Cake- Enab-1207312126.md",
@@ -762,9 +867,6 @@
 		"/E/pf/WizNote/My Knowledge/temp/903700734/服务质量保证研究方向汇总.md-903700734.md",
 		"/E/pf/WizNote/My Knowledge/temp/900718588/Reading Note - Cake- Enab-900718588.md",
 		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/getUsageInfo.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getInfo.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/dataExample.json",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getUsageInfo.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/新建文本文档.txt",
 		"/E/pf/WizNote/My Knowledge/temp/890245975/Reading Note - Cake- Enab-890245991.md",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/GitGutter.sublime-settings",
@@ -773,19 +875,9 @@
 		"/E/pf/WizNote/My Knowledge/temp/888109183/Reading Note - Cake- Enab-888109183.md",
 		"/E/pf/WizNote/My Knowledge/temp/821137236/Reading Note - PriorityMe-821137236.md",
 		"/E/pf/WizNote/My Knowledge/temp/821076817/Reading Note - PriorityMe-821076817.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/testRemoteProcess.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/disableAutoscale.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/enableAutoscale.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/configHelper.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/remoteProcess.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getPID.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/storageConsumer.py",
 		"/D/project/706项目/已有系统及文档/monitor/ganglia李双双/readme",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/destroy.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/requestExtraStorage.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/autoScaleLog.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/setup.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/storageProvider.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/confingHelper.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/fortest/requestExtraStorage.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/fortest/enableAutoscale.py",
@@ -806,15 +898,7 @@
 		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/autoscaleAppServer.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deploy.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/deployConsumer.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/createGroup.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/groupManager.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/configClient.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/confingHelper.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/consumers.list",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/devices.list",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.nodelist",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/deployStorageMaster.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/ssdCluster.disklist",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/deployStorage.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/conf/bk.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/ak.py",
@@ -823,55 +907,7 @@
 		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/deployAppServer.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/autoscaleAppServer.py",
 		"/E/pf/WizNote/My Knowledge/temp/126393367/YARN应用开发.md-126393367.md",
-		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-am.sh",
-		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-class.sh",
-		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-job.sh",
-		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-container.sh",
-		"/E/pf/WizNote/My Knowledge/temp/44207344/bugs.md-44207344.md",
-		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/kill-yarn-job.sh",
-		"/D/Dropbox/bb/research/tdstore-app-hello-samza-0.9.0/README.md",
-		"/D/Dropbox/bb/research/temp.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/README.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/其他方案.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/genfile.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorageMaster.py",
-		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/conf.php",
-		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/storage_provisioning.py",
-		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/monitor-change.sh",
-		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/script/init_ganglia.sh",
-		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/install.sh",
-		"/D/project/706项目/已有系统及文档/monitor/zhaohengganglia/ganglia.conf",
-		"/D/project/706项目/已有系统及文档/monitor/ganglia/script/rsh_config.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/temp.py",
-		"/D/project/706项目/测试结果/20150410/iozone4K-2G-12-nodelistall.log",
-		"/D/project/706项目/测试结果/20150402/4iozone4M.log",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/autoscale.sh",
-		"/D/project/本科毕设/codes_and_logs/storage_provisioning.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/storageMasterDestroy.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/storageMasterDestroy.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deployAppServer.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deploySlaveAppServer.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/appServerDestroy.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deployAppServer.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/getDevicesInfo.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/getDevicesInfo.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.py",
-		"/C/Users/lav/Desktop/cluster.conf",
-		"/E/pf/WizNote/My Knowledge/temp/334012742/配置及测试系统环境相关工作.md-334012742.md",
-		"/E/pf/WizNote/My Knowledge/temp/301266666/配置及测试系统环境相关工作.md-301266666.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/ssdCluster.nodelist",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/storage.sh",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/js/getdata.js",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/js/operationshow.js",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/expansionlv.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/fileTable.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/oporder/oporder.xml",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/createlv.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/login.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/error.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/bottom.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/nodeupdate.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/monitor.jsp"
+		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-am.sh"
 	],
 	"find":
 	{
@@ -889,6 +925,58 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"config",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			", ",
+			"getUsageInfo",
+			",",
+			"groupName",
+			"extendGroup",
+			"gmIP",
+			"groupName",
+			"cmd",
+			"extendGroupCmd",
+			"cmd",
+			"tmp",
+			"path",
+			"self.conf",
+			"\")",
+			"rcmd",
+			"remoteip",
+			"remoteGroupManagersConf",
+			"hostIP",
+			"conf",
+			"generalConf",
+			"atidkey",
+			"192.168.3.137",
+			"className",
+			"operation",
+			"module",
+			"operation",
+			"module",
+			"name",
+			"infoCLocation",
+			"TODO",
+			"-",
+			"- ",
 			"executeCmd",
 			"consumersConf",
 			"allConf",
@@ -964,59 +1052,7 @@
 			">",
 			"\"\"",
 			"devicepath",
-			",",
-			"ssd",
-			"start",
-			"submitorder",
-			"One or more",
-			"iscsi_ip",
-			"NodeOP",
-			"masterip",
-			"TCPServer",
-			"tcpserver",
-			"TCPServer",
-			"tcpserver",
-			"TCPServer",
-			"tcpserver",
-			"LAYOUTGET",
-			"LAYOUTRETURN",
-			"layout",
-			"TEST_STATEID",
-			"LAYOUTCOMMIT",
-			"DELEGRETURN",
-			"nfsd4_enc_ops",
-			"nfs4_xdr_enc_",
-			"nfsd4_enc_ops",
-			"nfsd4_encode_",
-			"section",
-			"requirements",
-			"Samza",
-			"margin",
-			"top",
-			"geometry",
-			"margin",
-			"malformed",
-			"Malformed",
-			"open",
-			"OffsetAndMessage",
-			"key",
-			"curdir",
-			"width=",
-			"will",
-			"keep",
-			"SuSE",
-			"rpm",
-			"For",
-			"size",
-			"size=9",
-			"\\ ",
-			"ts1",
-			"ts0",
-			"tf",
-			"tw0",
-			"n_{(",
-			"n_{I",
-			"n_{"
+			","
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1033,6 +1069,862 @@
 	},
 	"groups":
 	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "newStructure/test/testAll.py",
+					"settings":
+					{
+						"buffer_size": 608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								469,
+								469
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "newStructure/interfaces/readme.md",
+					"settings":
+					{
+						"buffer_size": 878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								719,
+								719
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/sublime-markdown-extended/Syntaxes/Markdown Extended.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "newStructure/main.py",
+					"settings":
+					{
+						"buffer_size": 1026,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								753,
+								753
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "reference/dataExample.json",
+					"settings":
+					{
+						"buffer_size": 3588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								407,
+								407
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
 		{
 			"sheets":
 			[
@@ -1056,11 +1948,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1093,6 +1992,122 @@
 		"selected_items":
 		[
 			[
+				"geui",
+				"newStructure/interfaces/getUsageInfo.py"
+			],
+			[
+				"geti",
+				"newStructure/interfaces/getInfo.py"
+			],
+			[
+				"relex",
+				"newStructure/interfaces/releaseExtraStorage.py"
+			],
+			[
+				"stoac",
+				"newStructure/core/storageConsumer.py"
+			],
+			[
+				"stc",
+				"storageConsumer.py"
+			],
+			[
+				"rel",
+				"newStructure/operations/releaseStorage.py"
+			],
+			[
+				"req",
+				"newStructure/operations/requestStorage.py"
+			],
+			[
+				"pro",
+				"newStructure/operations/startProvider.py"
+			],
+			[
+				"strc",
+				"newStructure/core/storageConsumer.py"
+			],
+			[
+				"storagec",
+				"newStructure/core/storageConsumer.py"
+			],
+			[
+				"startc",
+				"newStructure/operations/startConsumer.py"
+			],
+			[
+				"static",
+				"newStructure/utils/staticConfig.py"
+			],
+			[
+				"provid",
+				"newStructure/core/storageProvider.py"
+			],
+			[
+				"addcon",
+				"newStructure/interfaces/addStorageConsumer.py"
+			],
+			[
+				"re",
+				"newStructure/interfaces/requestExtraStorage.py"
+			],
+			[
+				"confh",
+				"newStructure/utils/configHelper.py"
+			],
+			[
+				"groupm",
+				"newStructure/core/groupManager.py"
+			],
+			[
+				"autol",
+				"newStructure/utils/autoScaleLog.py"
+			],
+			[
+				"storagep",
+				"newStructure/core/storageProvider.py"
+			],
+			[
+				"cre",
+				"newStructure/interfaces/createGroup.py"
+			],
+			[
+				"add",
+				"newStructure/interfaces/addDeviceToGroup.py"
+			],
+			[
+				"exten",
+				"newStructure/operations/extendGroup.py"
+			],
+			[
+				"group",
+				"newStructure/core/groupManager.py"
+			],
+			[
+				"datae",
+				"reference/dataExample.json"
+			],
+			[
+				"start",
+				"newStructure/operations/startConsumer.py"
+			],
+			[
+				"st",
+				"storageConsumer.py"
+			],
+			[
+				"client",
+				"configClient.py"
+			],
+			[
+				"examp",
+				"reference/dataExample.json"
+			],
+			[
+				"gencon",
+				"forTest/generalConfig.py"
+			],
+			[
 				"exam",
 				"reference/dataExample.json"
 			],
@@ -1113,10 +2128,6 @@
 				"destroy.sh"
 			],
 			[
-				"stc",
-				"storageConsumer.py"
-			],
-			[
 				"set",
 				"setup.md"
 			],
@@ -1135,10 +2146,6 @@
 			[
 				"ex",
 				"extendGroup.py"
-			],
-			[
-				"cre",
-				"createGroup.py"
 			],
 			[
 				"gr",
@@ -1235,7 +2242,7 @@
 		],
 		"width": 380.0
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": false,

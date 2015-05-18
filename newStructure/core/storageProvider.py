@@ -17,11 +17,13 @@ class storageProvider():
     logger = None
     path = "/usr/local/src/suyiAutoscale/src/"
     def __init__(self,deviceName,groupName):
-        infoCConf = staticConfig()
-        self.ipInfoC = infoCConf.getInfoCLocation()["ipInfoC"]
-        self.portInfoC = infoCConf.getInfoCLocation()["portInfoC"]
+        sConf = staticConfig()
+        self.ipInfoC = sConf.getInfoCLocation()["ipInfoC"]
+        self.portInfoC = sConf.getInfoCLocation()["portInfoC"]
         self.cHelper = configHelper(self.ipInfoC,self.portInfoC)
-        self.hostIP = self.getLocalIP("eth3")
+        hostName = self.executeCmd("hostname")
+        iframe = sConf.getHostInterface(hostName)
+        self.hostIP = self.getLocalIP(iframe)
         self.conf["deviceName"] = deviceName
         self.conf["deviceGroup"] = groupName
         self.loadConf()
@@ -29,7 +31,7 @@ class storageProvider():
             self.executeCmd(cmd)
         self.logger = autoscaleLog(__file__)
         sConf = staticConfig()
-        self.path = sConf.getPath()+"operations/"
+        self.path = sConf.getPath()+"core/"
 
     def getLocalIP(self, ifname):
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -63,17 +65,17 @@ class storageProvider():
         tid = atid.get(self.hostIP)
         if tid == None:
             tid = 100
-        self.conf["tid"] = tid
+        self.conf["tid"] = str(tid)
         atid[self.hostIP] = tid+1
         self.cHelper.setAvailTid(atid)
-        gmConf = self.cHelper.getGroupMConf()
-        gmip = gmConf.get(self.conf["deviceGroup"])
-        if gmip == None:
+        gmsConf = self.cHelper.getGroupMConf()
+        gmConf = gmsConf.get(self.conf["deviceGroup"])
+        if gmConf == None:
             print "Storage group do not exist!"
             self.writeLog("Storage group do not exist!")
             self.shutdownLog()
             sys.exit(1)
-        self.conf["groupManagerIP"] = gmip
+        self.conf["groupManagerIP"] = gmConf.get("gmIP")
 
     def exportStorage(self):
         cmd = self.path+"deployStorage.sh "+self.conf["deviceIQN"]+" "+self.conf["deviceName"]+" "+self.conf["tid"]+" "+self.conf["groupManagerIP"]

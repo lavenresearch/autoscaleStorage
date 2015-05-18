@@ -42,11 +42,13 @@ class groupManager():
     initialCmds = []
     logger = None
     def __init__(self, groupName):
-        infoCConf = staticConfig()
-        self.ipInfoC = infoCConf.getInfoCLocation()["ipInfoC"]
-        self.portInfoC = infoCConf.getInfoCLocation()["portInfoC"]
+        sConf = staticConfig()
+        self.ipInfoC = sConf.getInfoCLocation()["ipInfoC"]
+        self.portInfoC = sConf.getInfoCLocation()["portInfoC"]
         self.cHelper = configHelper(self.ipInfoC,self.portInfoC)
-        self.hostIP = self.getLocalIP("eth3")
+        hostName = self.executeCmd("hostname")
+        iframe = sConf.getHostInterface(hostName)
+        self.hostIP = self.getLocalIP(iframe)
         self.groupName = groupName
         self.vgName = self.groupName + "VG"
         self.loadConf()

@@ -19,7 +19,7 @@ def run(arg):
     consumerLocation = arg[0]
     sConf = staticConfig()
     path = sConf.getPath()
-    cmd = "ssh -t root@"+consumerLocation+" \"python "+path+"main.py startConsumer"+"\""
+    cmd = "ssh -t root@"+consumerLocation+" \"python "+path+"main.py startConsumer\""
     executeCmd(cmd)
 
 if __name__ == '__main__':

@@ -13,16 +13,23 @@ class startConsumer():
     conf = {}
     hostIP = ""
     logger = None
-    initialCmds = ["dos2unix *","service iptable stop","setenforce 0","lvmconf --disable-cluster"]
-    def __init__(self):
-        infoCConf = staticConfig()
-        self.ipInfoC = infoCConf.getInfoCLocation()["ipInfoC"]
-        self.portInfoC = infoCConf.getInfoCLocation()["portInfoC"]
-        self.cHelper = configHelper(self.ipInfoC,self.portInfoC)
-        self.hostIP = self.getLocalIP("eth3")
-        for cmd in self.initialCmds:
-            self.executeCmd(cmd)
+    def __init__(self,arg):
+        sConf = staticConfig()
         self.logger = autoscaleLog(__file__)
+        self.ipInfoC = sConf.getInfoCLocation()["ipInfoC"]
+        self.portInfoC = sConf.getInfoCLocation()["portInfoC"]
+        self.cHelper = configHelper(self.ipInfoC,self.portInfoC)
+        hostName = self.executeCmd("hostname")
+        iframe = sConf.getHostInterface(hostName)
+        self.hostIP = self.getLocalIP(iframe)
+
+    def executeCmd(self,cmd):
+        print cmd
+        self.logger.writeLog(cmd)
+        tmp = os.popen(cmd).read()
+        print tmp
+        self.logger.writeLog(tmp)
+        return tmp
 
     def getLocalIP(self, ifname):
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -34,8 +41,9 @@ class startConsumer():
 
     def run(self):
         consumerID = self.hostIP
-        remoteConf = self.cHelper.getConsumerConf().get(consumerID)
-        if remoteConf == None:
+        remoteConf = self.cHelper.getConsumerConf()
+        remoteConsumerConf = remoteConf.get(consumerID)
+        if remoteConsumerConf == None:
             hostName = self.executeCmd("hostname").split("\n")[0]
             remoteIQN = "iqn.dsal.consumer:"+hostName+"."+"disk"
             remoteLV = "consumer"+hostName+"remoteLV"

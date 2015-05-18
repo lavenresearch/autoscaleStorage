@@ -7,31 +7,31 @@ if [ "$#" = 0 ]; then
     dd if=/dev/zero of=/home/suyiblock1G bs=1M count=1000
     devicepath=/home/suyiblock1G
     tid=2
-    gmip = 192.168.3.137
+    gmip=192.168.3.137
 elif [[ "$#" = 1 ]]; then
     echo "Run: ./deployStorage.sh iqn.2222."$(hostname)":storage.disk2 "${1}" 2"
     deviceiqn=iqn.2222.$(hostname):storage.disk2
     devicepath=${1}
     tid=2
-    gmip = 192.168.3.137
+    gmip=192.168.3.137
 elif [[ "$#" = 2 ]]; then
     echo "Run: ./deployStorage.sh" ${1} ${2}" 2"
     deviceiqn=${1}
     devicepath=${2}
     tid=2
-    gmip = 192.168.3.137
+    gmip=192.168.3.137
 elif [[ "$#" = 3 ]]; then
     echo "Run: ./deployStorage.sh" ${1} ${2} ${3}
     deviceiqn=${1}
     devicepath=${2}
     tid=${3}
-    gmip = 192.168.3.137
+    gmip=192.168.3.137
 elif [[ "$#" = 4 ]]; then
     echo "Run: ./deployStorage.sh" ${1} ${2} ${3}
     deviceiqn=${1}
     devicepath=${2}
     tid=${3}
-    gmip = ${4}
+    gmip=${4}
 else
     echo "Too much parameters!"
 fi

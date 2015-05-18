@@ -16,11 +16,13 @@ class storageConsumer():
     # initialCmds = ["dos2unix *","chmod +x *","service iptable stop","setenforce 0","lvmconf --disable-cluster"]
     initialCmds = []
     def __init__(self):
-        infoCConf = staticConfig()
-        self.ipInfoC = infoCConf.getInfoCLocation()["ipInfoC"]
-        self.portInfoC = infoCConf.getInfoCLocation()["portInfoC"]
+        sConf = staticConfig()
+        self.ipInfoC = sConf.getInfoCLocation()["ipInfoC"]
+        self.portInfoC = sConf.getInfoCLocation()["portInfoC"]
         self.cHelper = configHelper(self.ipInfoC,self.portInfoC)
-        self.hostIP = self.getLocalIP("eth3")
+        hostName = self.executeCmd("hostname")
+        iframe = sConf.getHostInterface(hostName)
+        self.hostIP = self.getLocalIP(iframe)
         self.loadConf()
         for cmd in self.initialCmds:
             self.executeCmd(cmd)

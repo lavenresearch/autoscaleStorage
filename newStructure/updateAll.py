@@ -1,21 +1,15 @@
-from utils.staticConfig import staticConfig
-from utils.configHelper import configHelper
+import os
 from utils.staticConfig import staticConfig
 from utils.autoScaleLog import autoscaleLog
-import sys,os
-# cmd = "mkdir -p "+path
-# cmd = "scp -r ../ "+destinationIP+":"+path
-# initCmd = []
 
-class deployALL():
+class updateAll():
     destinationIP = ""
     path = ""
-    initialCmds = ["service iptable stop","setenforce 0","lvmconf --disable-cluster","yum install scsi-target-utils.x86_64 iscsi-initiator-utils.x86_64 reiserfs-utils --nogpgcheck -y"]
     def __init__(self, arg):
-        self.destinationIP = arg[0]
+        self.destinationIP = arg
         sConf = staticConfig()
         self.path = sConf.getPath()
-        self.executeCmd("ssh-copy-id -i "+self.destinationIP)
+        # self.executeCmd("ssh-copy-id -i "+self.destinationIP)
 
     def executeCmd(self, cmd):
         logger = autoscaleLog(__file__)
@@ -42,12 +36,10 @@ class deployALL():
         self.executeRemoteCmd(rcmd, self.destinationIP)
         rcmd = "chmod +x "+self.path+"*/*.sh"
         self.executeRemoteCmd(rcmd, self.destinationIP)
-        for rcmd in self.initialCmds:
-            self.executeRemoteCmd(rcmd, self.destinationIP)
-        rcmd = "tar -zxvf "+self.path+"packages/redis-2.10.3.tar.gz -C "+self.path+"packages/"
-        self.executeRemoteCmd(rcmd, self.destinationIP)
-        rcmd = "cd "+self.path+"packages/redis-2.10.3/ && python setup.py install"
-        self.executeRemoteCmd(rcmd, self.destinationIP)
 
 
-
+if __name__ == '__main__':
+    iplist = ["192.168.3.192","192.168.3.161","192.168.3.167","192.168.3.130","192.168.3.121"]
+    for ip in iplist:
+        ua = updateAll(ip)
+        ua.run()
