@@ -1,4 +1,5 @@
 from autoScaleLog import autoscaleLog
+from generalConfig import generalConfig
 import sys,os
 
 # Needed arguments including:
@@ -22,7 +23,8 @@ import sys,os
 if __name__ == '__main__':
     logger = autoscaleLog(__file__)
     logger.writeLog(str(sys.argv))
-    path = "/usr/local/src/suyiAutoscale/src/"
+    gConf = generalConfig()
+    path = gConf.getPath()
     consumerIP = sys.argv[1]
     consumerMountPoint = sys.argv[2]
     groupName = sys.argv[3]

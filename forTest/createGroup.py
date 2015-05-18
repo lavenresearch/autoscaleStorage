@@ -1,28 +1,28 @@
 from autoScaleLog import autoscaleLog
 from configHelper import configHelper
 from generalConfig import generalConfig
-import sys,os
+import sys
 import json
 
-def executeCmd(cmd,logger):
-    print cmd
-    logger.writeLog(cmd)
-    tmp = os.popen(cmd).read()
-    print tmp
-    logger.writeLog(tmp)
-    return tmp
+# Needed arguments including:
+#
+# groupName : highSpeedGroup
+
+# For example:
+#
+# python createGroup.py highSpeedGroup
 
 if __name__ == '__main__':
     logger = autoscaleLog(__file__)
     logger.writeLog(sys.argv)
+    groupName = sys.argv[1]
     gConf = generalConfig()
     infoCLocation = gConf.getInfoCLocation()
     cHelper = configHelper( infoCLocation.get("ipInfoC"), infoCLocation.get("portInfoC"))
-    consumersConf = cHelper.getConsumerConf()
     providersConf = cHelper.getProviderConf()
-    allConf = {}
-    allConf["dev"] = providersConf
-    allConf["appserver"] = consumersConf
-    logger.writeLog(allConf)
-    print json.dumps(allConf)
+    if providersConf.get(groupName) == None:
+        providersConf[groupName] = {}
+        cHelper.setProviderConf(providersConf)
+    logger.writeLog(providersConf)
+    print json.dumps(providersConf)
     logger.shutdownLog()

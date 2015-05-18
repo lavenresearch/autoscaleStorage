@@ -17,7 +17,7 @@ procedure:
 
     python storageProvider.py
 
-@de17
+@de17C:\Program Files\Common Files\Tencent\QQPhoneManager
 
     python createGroup.py highSpeedGroup
     python createGroup.py lowSpeedGroup

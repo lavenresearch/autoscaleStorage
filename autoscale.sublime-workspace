@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"tim",
+				"timeSequence"
+			],
+			[
+				"me",
+				"migrationEffect"
+			],
+			[
+				"mig",
+				"migrationEffect"
+			],
+			[
+				"da",
+				"dat"
+			],
+			[
+				"provider",
+				"providersConf"
+			],
+			[
+				"devi",
+				"deviceSize"
+			],
+			[
 				"remot",
 				"remoteAS"
 			],
@@ -388,10 +412,6 @@
 				"metric_y"
 			],
 			[
-				"me",
-				"metric_x"
-			],
-			[
 				"dr",
 				"drawBrace"
 			],
@@ -494,26 +514,6 @@
 			[
 				"raw",
 				"rawVectorsForNodes"
-			],
-			[
-				"ra",
-				"rawVectorsForNodes"
-			],
-			[
-				"vector",
-				"vectorsForNodes"
-			],
-			[
-				"v",
-				"vectorsForNodes  (variable)"
-			],
-			[
-				"s",
-				"standardizeRawMessage  (function)"
-			],
-			[
-				"cl",
-				"collect  (function)"
 			]
 		]
 	},
@@ -523,9 +523,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 285.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"removep",
+				"Package Control: Remove Package"
+			],
 			[
 				"setj",
 				"Set Syntax: Java"
@@ -719,7 +727,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 541.0
+		"width": 562.0
 	},
 	"console":
 	{
@@ -736,6 +744,33 @@
 	},
 	"file_history":
 	[
+		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/hotsoptAnalysis.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/randomData.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/hotspot.py",
+		"/D/project/706项目/测试结果/20150401/pnfsThroughput.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/tc.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/utility/tc.sh",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/workload/randomData.py",
+		"/E/pf/WizNote/My Knowledge/temp/1207312126/Reading Note - Cake- Enab-1207312126.md",
+		"/D/project/706项目/已有系统及文档/自动扩容/OpenSource/其他方案.md",
+		"/E/pf/WizNote/My Knowledge/temp/1159654741/服务质量保证研究方向汇总.md-1159654741.md",
+		"/E/pf/WizNote/My Knowledge/temp/1159620593/Reading Note - Cake- Enab-1159620608.md",
+		"/E/pf/WizNote/My Knowledge/temp/950534013/Reading Note - Cake- Enab-950534013.md",
+		"/D/project/706项目/已有系统及文档/异构数据统一管理/install_mysql.sh",
+		"/D/project/706项目/已有系统及文档/iSCSI_NFS_CIFS/setup.sh",
+		"/E/pf/WizNote/My Knowledge/temp/903700734/服务质量保证研究方向汇总.md-903700734.md",
+		"/E/pf/WizNote/My Knowledge/temp/900718588/Reading Note - Cake- Enab-900718588.md",
+		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/getUsageInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/dataExample.json",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getUsageInfo.py",
+		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/新建文本文档.txt",
+		"/E/pf/WizNote/My Knowledge/temp/890245975/Reading Note - Cake- Enab-890245991.md",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/GitGutter.sublime-settings",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/GitGutter/GitGutter.sublime-settings",
+		"/E/pf/WizNote/My Knowledge/temp/888111383/Reading Note - Cake- Enab-888111383.md",
+		"/E/pf/WizNote/My Knowledge/temp/888109183/Reading Note - Cake- Enab-888109183.md",
 		"/E/pf/WizNote/My Knowledge/temp/821137236/Reading Note - PriorityMe-821137236.md",
 		"/E/pf/WizNote/My Knowledge/temp/821076817/Reading Note - PriorityMe-821076817.md",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/testRemoteProcess.py",
@@ -747,11 +782,9 @@
 		"/D/project/706项目/已有系统及文档/自动扩容/src/storageConsumer.py",
 		"/D/project/706项目/已有系统及文档/monitor/ganglia李双双/readme",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/destroy.sh",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/getInfo.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/requestExtraStorage.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/autoScaleLog.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/setup.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/dataExample.json",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/storageProvider.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/forTest/confingHelper.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/fortest/requestExtraStorage.py",
@@ -765,7 +798,6 @@
 		"/D/project/706项目/已有系统及文档/自动扩容/src/interfaces/requestExtraStorage.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/consumerAutoscale.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/consumerExtend.py",
-		"/D/project/706项目/已有系统及文档/自动扩容/src/deployStorage.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/extendGroup.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/interfaces/autoScaleLog.py",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/interfaces/getStorageInfo.py",
@@ -791,7 +823,6 @@
 		"/D/project/706项目/已有系统及文档/自动扩容/src/reference/deployAppServer.sh",
 		"/D/project/706项目/已有系统及文档/自动扩容/src/autoscaleAppServer.py",
 		"/E/pf/WizNote/My Knowledge/temp/126393367/YARN应用开发.md-126393367.md",
-		"/D/project/706项目/已有系统及文档/自动扩容/OpenSource/其他方案.md",
 		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-am.sh",
 		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-class.sh",
 		"/D/Dropbox/bb/research/tdstore-apache-samza-0.9.0/samza-shell/src/main/bash/run-job.sh",
@@ -840,30 +871,7 @@
 		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/error.jsp",
 		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/WEB-INF/bottom.jsp",
 		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/nodeupdate.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/monitor.jsp",
-		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/js/FusionMaps.js",
-		"/C/Users/lav/AppData/Local/Temp/WinMount3/WM3c4c3769b$.tmp/.ptmp608375/s3APIpNFS/s3/.ptmp266514/mock-s3-master/mock_s3/xml_templates.py",
-		"/C/Users/lav/AppData/Local/Temp/WinMount3/WM3c4c3769b$.tmp/.ptmp608375/s3APIpNFS/s3/.ptmp266514/mock-s3-master/mock_s3/main.py",
-		"/C/Users/lav/AppData/Local/Temp/WinMount3/WM3c4c3769b$.tmp/.ptmp608375/s3APIpNFS/s3/.ptmp266514/mock-s3-master/mock_s3/file_store.py",
-		"/C/Users/lav/AppData/Local/Temp/WinMount3/WM3c4c3769b$.tmp/.ptmp608375/s3APIpNFS/s3/.ptmp266514/mock-s3-master/tests/create.py",
-		"/C/Users/lav/Desktop/111disksa/startsa/SAReg4.java",
-		"/C/Users/lav/Desktop/111disksa.src/startsa/SAReg4.java",
-		"/C/Users/lav/Desktop/getip.java",
-		"/Z/存储虚拟化软件发布包/执行代理linux发布包/ExecProxy/exec/genXML.java",
-		"/Z/存储虚拟化软件发布包/存储虚拟化windows发布包/san_volume_alpha_nocode_9-17/disksa/111disksa/.project",
-		"/Z/存储虚拟化软件发布包/存储虚拟化windows发布包/san_volume_alpha_nocode_9-17/disksa/111disksa/disk.xml",
-		"/Z/存储虚拟化软件发布包/存储虚拟化windows发布包/san_volume_alpha_nocode_9-17/disksa/111disksa/RegInf",
-		"/Z/存储虚拟化软件发布包/执行代理linux发布包/ExecProxy/exec/ExecProxy.java",
-		"/Z/存储虚拟化软件发布包/执行代理linux发布包/ExecProxy/util/NodeOP.java",
-		"/Z/存储虚拟化软件发布包/执行代理linux发布包/hostSA/node/operation/NodeOP.java",
-		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/LvmlOperator.java",
-		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/genXML.java",
-		"/C/Users/lav/AppData/Roaming/NetSarang/Xftp/Temporary/ExecProxy.java",
-		"/D/project/本科毕设/codes_and_logs/ad_warning_new.py",
-		"/D/project/本科毕设/codes_and_logs/ad_warning.py",
-		"/D/project/本科毕设/codes_and_logs/read_rrd.sh",
-		"/D/project/本科毕设/codes_and_logs/init_pnfs.sh",
-		"/E/pf/WizNote/My Knowledge/temp/672898503/Reading Note - Virtual Ma-672898503.md"
+		"/Z/存储虚拟化软件发布包/资源查询和管理平台/apache-tomcat-6.0.29/webapps/managevolume/monitor.jsp"
 	],
 	"find":
 	{
@@ -881,6 +889,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"executeCmd",
+			"consumersConf",
+			"allConf",
+			"limit",
+			"split",
+			"(",
+			".\n",
 			"remoteCmd",
 			"remoteSize",
 			"/dev/sd",
@@ -1001,14 +1016,7 @@
 			"tw0",
 			"n_{(",
 			"n_{I",
-			"n_{",
-			"None",
-			"\\na",
-			"2",
-			"6",
-			"5",
-			"statebackup_y",
-			"i"
+			"n_{"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1084,6 +1092,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"exam",
+				"reference/dataExample.json"
+			],
+			[
+				"getin",
+				"forTest/getInfo.py"
+			],
 			[
 				"test",
 				"forTest/testRemoteProcess.py"
@@ -1222,7 +1238,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 278.0,
 	"status_bar_visible": true
 }
