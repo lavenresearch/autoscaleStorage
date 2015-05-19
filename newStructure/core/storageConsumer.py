@@ -16,6 +16,7 @@ class storageConsumer():
     # initialCmds = ["dos2unix *","chmod +x *","service iptable stop","setenforce 0","lvmconf --disable-cluster"]
     initialCmds = []
     def __init__(self):
+        self.logger = autoscaleLog(__file__)
         sConf = staticConfig()
         self.ipInfoC = sConf.getInfoCLocation()["ipInfoC"]
         self.portInfoC = sConf.getInfoCLocation()["portInfoC"]
@@ -26,7 +27,7 @@ class storageConsumer():
         self.loadConf()
         for cmd in self.initialCmds:
             self.executeCmd(cmd)
-        self.logger = autoscaleLog(__file__)
+
 
     def getLocalIP(self, ifname):
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -134,6 +135,7 @@ class storageConsumer():
             print "Storage Load Failed"
             self.logger.writeLog("Storage Load Failed")
             sys.exit()
+        extraDeviceConf["localDeviceMap"] = newDevices
 
         # update Information center
 
@@ -148,15 +150,15 @@ class storageConsumer():
         devicesInfo = consumserConf["extraDevicesList"]
         deviceInfo = {}
         for d in devicesInfo:
-            if d["localDeviceMap"] == localDeviceMap:
+            if localDeviceMap in d["localDeviceMap"]:
                 deviceInfo = d
-                devicesInfo.remove(d)
-                consumserConf["remoteDiskAmount"] -= 1
         if deviceInfo == {}:
             print "Device to be released do note exist!"
             self.logger.writeLog("Device to be released do note exist!")
             self.logger.shutdownLog()
             sys.exit(1)
+        devicesInfo.remove(deviceInfo)
+        consumserConf["remoteDiskAmount"] -= 1
         groupMsConf = self.cHelper.getGroupMConf()
         groupMConf = groupMsConf.get(deviceInfo["groupName"])
         gmIP = str(groupMConf["gmIP"])

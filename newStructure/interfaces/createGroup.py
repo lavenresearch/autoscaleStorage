@@ -26,9 +26,10 @@ def run(arg):
     logger.writeLog(providersConf)
     print json.dumps(providersConf)
     gmConf = cHelper.getGroupMConf()
+    groupAmount = len(gmConf)
     if gmConf.get(groupName) == None:
         gmConf[groupName] = {}
-        gmConf[groupName]["currentTid"] = 500
+        gmConf[groupName]["currentTid"] = 500+200*groupAmount
         gmConf[groupName]["gmIP"] = sConf.getGroupMIP()
         gmConf[groupName]["devicesLoaded"] = []
         cHelper.setGroupMConf(gmConf)

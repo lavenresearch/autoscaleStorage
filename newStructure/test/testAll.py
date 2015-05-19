@@ -64,42 +64,48 @@ class testAll():
         getUsageInfo.run([])
         raw_input("press enter to continue:")
 
-    def run(self):
-        print "Enter Test Procedure!\n"
-        print "########################"
-        print "createGroup"
-        print "########################"
-        createGroup.run(self.cgARG1)
-        createGroup.run(self.cgARG2)
-        self.viewResult()
-        print "########################"
-        print "addStorageConsumer"
-        print "########################"
-        addStorageConsumer.run(self.ascARG1)
-        addStorageConsumer.run(self.ascARG2)
-        self.viewResult()
-        print "########################"
-        print "addDeviceToGroup"
-        print "########################"
-        addDeviceToGroup.run(self.adtgARG1)
-        addDeviceToGroup.run(self.adtgARG2)
-        addDeviceToGroup.run(self.adtgARG3)
-        addDeviceToGroup.run(self.adtgARG4)
-        self.viewResult()
-        print "########################"
-        print "requestExtraStorage"
-        print "########################"
-        requestExtraStorage.run(self.rqesARG1)
-        requestExtraStorage.run(self.rqesARG2)
-        requestExtraStorage.run(self.rqesARG3)
-        requestExtraStorage.run(self.rqesARG4)
-        requestExtraStorage.run(self.rqesARG5)
-        self.viewResult()
-        print "########################"
-        print "releaseExtraStorage"
-        print "########################"
-        for i in xrange(2):
-            rlesARGcl = input("consumerLocation:")
-            rlesARGldm = input("localDeviceMap:")
-            releaseExtraStorage.run([rlesARGcl,rlesARGldm])
+    def run(self, stepCode):
+        print "Enter Test Procedure!\nstepCode:"+stepCode
+        stepCode = int(stepCode)
+        if stepCode <= 1:
+            print "\n\n########################"
+            print "createGroup 1"
+            print "########################\n\n"
+            createGroup.run(self.cgARG1)
+            createGroup.run(self.cgARG2)
             self.viewResult()
+        if stepCode <= 2:
+            print "\n\n########################"
+            print "addStorageConsumer 2"
+            print "########################\n\n"
+            addStorageConsumer.run(self.ascARG1)
+            addStorageConsumer.run(self.ascARG2)
+            self.viewResult()
+        if stepCode <= 3:
+            print "\n\n########################"
+            print "addDeviceToGroup 3"
+            print "########################\n\n"
+            addDeviceToGroup.run(self.adtgARG1)
+            addDeviceToGroup.run(self.adtgARG2)
+            addDeviceToGroup.run(self.adtgARG3)
+            addDeviceToGroup.run(self.adtgARG4)
+            self.viewResult()
+        if stepCode <= 4:
+            print "\n\n########################"
+            print "requestExtraStorage 4"
+            print "########################\n\n"
+            requestExtraStorage.run(self.rqesARG1)
+            requestExtraStorage.run(self.rqesARG2)
+            requestExtraStorage.run(self.rqesARG3)
+            requestExtraStorage.run(self.rqesARG4)
+            requestExtraStorage.run(self.rqesARG5)
+            self.viewResult()
+        if stepCode <= 5:
+            print "\n\n########################"
+            print "releaseExtraStorage 5"
+            print "########################\n\n"
+            for i in xrange(2):
+                rlesARGcl = raw_input("consumerLocation:")
+                rlesARGldm = raw_input("localDeviceMap:")
+                releaseExtraStorage.run([rlesARGcl,rlesARGldm])
+                self.viewResult()

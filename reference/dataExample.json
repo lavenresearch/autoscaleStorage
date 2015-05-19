@@ -123,3 +123,134 @@
     ]
   }
 }
+
+// new data format
+
+{
+  "appserver": {
+    "192.168.3.161": {
+      "remoteLV": "consumerca01remoteLV",
+      "consumerLocation": "192.168.3.161",
+      "remoteDiskAmount": 3,
+      "consumerID": "192.168.3.161",
+      "remoteIQN": "iqn.dsal.consumer:ca01.disk",
+      "extraDevicesList": [
+        {
+          "remoteLV": "consumerca01remoteLV1",
+          "localDeviceMap": [
+            "/dev/sdb"
+          ],
+          "remoteSize": "150",
+          "remoteTid": 501,
+          "groupName": "highSpeedGroup",
+          "remoteIQN": "iqn.dsal.consumer:ca01.disk1",
+          "remoteLVPath": "/dev/highSpeedGroupVG/consumerca01remoteLV1",
+          "remoteVG": "highSpeedGroupVG"
+        },
+        {
+          "remoteLV": "consumerca01remoteLV2",
+          "localDeviceMap": [
+            "/dev/sdc"
+          ],
+          "remoteSize": "250",
+          "remoteTid": 502,
+          "groupName": "highSpeedGroup",
+          "remoteIQN": "iqn.dsal.consumer:ca01.disk2",
+          "remoteLVPath": "/dev/highSpeedGroupVG/consumerca01remoteLV2",
+          "remoteVG": "highSpeedGroupVG"
+        },
+        {
+          "remoteLV": "consumerca01remoteLV3",
+          "localDeviceMap": [
+            "/dev/sdd"
+          ],
+          "remoteSize": "350",
+          "remoteTid": 701,
+          "groupName": "lowSpeedGroup",
+          "remoteIQN": "iqn.dsal.consumer:ca01.disk3",
+          "remoteLVPath": "/dev/lowSpeedGroupVG/consumerca01remoteLV3",
+          "remoteVG": "lowSpeedGroupVG"
+        }
+      ]
+    },
+    "192.168.3.62": {
+      "remoteLV": "consumerde62remoteLV",
+      "consumerLocation": "192.168.3.62",
+      "remoteDiskAmount": 2,
+      "consumerID": "192.168.3.62",
+      "remoteIQN": "iqn.dsal.consumer:de62.disk",
+      "extraDevicesList": [
+        {
+          "remoteLV": "consumerde62remoteLV1",
+          "localDeviceMap": [
+            "/dev/sdc"
+          ],
+          "remoteSize": "400",
+          "remoteTid": 503,
+          "groupName": "highSpeedGroup",
+          "remoteIQN": "iqn.dsal.consumer:de62.disk1",
+          "remoteLVPath": "/dev/highSpeedGroupVG/consumerde62remoteLV1",
+          "remoteVG": "highSpeedGroupVG"
+        },
+        {
+          "remoteLV": "consumerde62remoteLV2",
+          "localDeviceMap": [
+            "/dev/sdd"
+          ],
+          "remoteSize": "500",
+          "remoteTid": 702,
+          "groupName": "lowSpeedGroup",
+          "remoteIQN": "iqn.dsal.consumer:de62.disk2",
+          "remoteLVPath": "/dev/lowSpeedGroupVG/consumerde62remoteLV2",
+          "remoteVG": "lowSpeedGroupVG"
+        }
+      ]
+    }
+  },
+  "dev": {
+    "lowSpeedGroup": {
+      "/dev/loop1192.168.3.167": {
+        "deviceName": "/dev/loop1",
+        "deviceGroup": "lowSpeedGroup",
+        "deviceSize": 5000,
+        "deviceType": "localDisk",
+        "tid": "101",
+        "deviceIQN": "iqn.dsal.storage:ca07.localdomain.loop1",
+        "deviceLocation": "192.168.3.167",
+        "groupManagerIP": "192.168.3.130"
+      }
+    },
+    "highSpeedGroup": {
+      "/dev/loop0192.168.3.167": {
+        "deviceName": "/dev/loop0",
+        "deviceGroup": "highSpeedGroup",
+        "deviceSize": 5000,
+        "deviceType": "localDisk",
+        "tid": "100",
+        "groupManagerIP": "192.168.3.130",
+        "deviceLocation": "192.168.3.167",
+        "deviceIQN": "iqn.dsal.storage:ca07.localdomain.loop0"
+      },
+      "/dev/loop1192.168.3.192": {
+        "deviceName": "/dev/loop1",
+        "deviceGroup": "highSpeedGroup",
+        "deviceSize": 5000,
+        "deviceType": "localDisk",
+        "tid": "101",
+        "deviceIQN": "iqn.dsal.storage:ca32.loop1",
+        "deviceLocation": "192.168.3.192",
+        "groupManagerIP": "192.168.3.130"
+      },
+      "/dev/loop0192.168.3.192": {
+        "deviceName": "/dev/loop0",
+        "deviceGroup": "highSpeedGroup",
+        "deviceSize": 5000,
+        "deviceType": "localDisk",
+        "tid": "100",
+        "groupManagerIP": "192.168.3.130",
+        "deviceLocation": "192.168.3.192",
+        "deviceIQN": "iqn.dsal.storage:ca32.loop0"
+      }
+    }
+  }
+}

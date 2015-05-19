@@ -39,7 +39,7 @@ if __name__ == '__main__':
         print "in testAll"
         operation = globals()[moduleName]
         op = operation()
-        op.run()
+        op.run(sys.argv[2])
         sys.exit(0)
     print "do nothing"
     sys.exit(1)
