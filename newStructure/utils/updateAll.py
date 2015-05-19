@@ -38,7 +38,7 @@ class updateAll():
         self.executeRemoteCmd(rcmd, self.destinationIP)
 
 
-if __name__ == '__main__':
+def run():
     iplist = ["192.168.3.192","192.168.3.161","192.168.3.167","192.168.3.130","192.168.3.121"]
     for ip in iplist:
         ua = updateAll(ip)

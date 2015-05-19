@@ -9,6 +9,7 @@ from test.testAll import testAll
 from interfaces import createGroup, addDeviceToGroup, addStorageConsumer, requestExtraStorage, releaseExtraStorage, getInfo, getUsageInfo
 
 from utils.deployALL import deployALL
+from utils import updateAll, breakAll
 
 ops = ["startProvider","extendGroup","releaseStorage","requestStorage","startConsumer"]
 ifs = ["createGroup", "addDeviceToGroup", "addStorageConsumer", "requestExtraStorage", "releaseExtraStorage", "getInfo", "getUsageInfo"]
@@ -34,6 +35,16 @@ if __name__ == '__main__':
         operation = globals()[moduleName]
         op = operation(sys.argv[2:])
         op.run()
+        sys.exit(0)
+    if moduleName == "updateAll":
+        print "in updateAll"
+        operation = globals()[moduleName]
+        operation.run()
+        sys.exit(0)
+    if moduleName == "breakAll":
+        print "in breakAll"
+        operation = globals()[moduleName]
+        operation.run()
         sys.exit(0)
     if moduleName == "testAll":
         print "in testAll"
